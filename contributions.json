@@ -59,10 +59,29 @@
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-5919660034"
     },
     {
+      "additions": 29,
+      "approved_by": [
+        "TylerHelmuth"
+      ],
       "component": "internal/k8sinventory",
       "date": "2026-09-30",
+      "deletions": 2,
+      "discussion": 10,
+      "files": 1,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50433"
+      ],
       "merged": "2026-10-06",
+      "merged_by": "TylerHelmuth",
       "number": 51657,
+      "recognition": [
+        {
+          "by": "krisztianfekete",
+          "date": "2026-10-06",
+          "text": "Thanks, added a few comments!",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657#pullrequestreview-5425438471"
+        }
+      ],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "state": "merged",
       "title": "[chore][internal/k8sinventory] Fix flaky cache sync tests",
@@ -128,6 +147,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51323"
     },
     {
+      "author": "JashRashne",
       "component": "receiver/sqlserver",
       "date": "2026-09-21",
       "number": 51231,
@@ -139,6 +159,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269889722"
     },
     {
+      "author": "JashRashne",
       "component": "receiver/sqlserver",
       "date": "2026-09-21",
       "number": 51231,
@@ -150,6 +171,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269375009"
     },
     {
+      "author": "SrikarChittemsetty",
       "component": "receiver/sqlserver",
       "date": "2026-09-21",
       "number": 50135,
@@ -161,6 +183,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#pullrequestreview-5271103457"
     },
     {
+      "author": "SrikarChittemsetty",
       "component": "receiver/sqlserver",
       "date": "2026-09-21",
       "number": 50135,
@@ -206,10 +229,42 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51150"
     },
     {
+      "additions": 42,
+      "approved_by": [
+        "ebrdarSplunk",
+        "paulojmdias"
+      ],
       "component": "receiver/sqlserver",
       "date": "2026-09-17",
+      "deletions": 0,
+      "discussion": 9,
+      "files": 1,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774"
+      ],
       "merged": "2026-09-21",
+      "merged_by": "songy23",
       "number": 51138,
+      "recognition": [
+        {
+          "by": "ebrdarSplunk",
+          "date": "2026-09-18",
+          "text": "Thanks for picking this up — this is a real documentation gap, and the failover-cluster note is the kind of thing that costs people hours. A few things before I can approve. ## Blocking **The…",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#pullrequestreview-5247471462"
+        },
+        {
+          "by": "ebrdarSplunk",
+          "date": "2026-09-18",
+          "text": "@Abhimanyu9988 thank yuo for addressing all Nit: the example uses the URL form, which is why you needed the URL-encoding caveat. The ADO form mirrors what the receiver builds internally for…",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#pullrequestreview-5250084178"
+        },
+        {
+          "by": "singhvibhanshu",
+          "date": "2026-09-21",
+          "text": "This PR has been approved by the code-owner. Could someone from @open-telemetry/collector-contrib-approvers please take a look at it? Thanks!",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#issuecomment-5759761745"
+        }
+      ],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "state": "merged",
       "title": "[chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older",
