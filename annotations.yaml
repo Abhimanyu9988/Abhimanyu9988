@@ -1,0 +1,13 @@
+# Optional notes for your contribution log, keyed by the exact URL of a PR, issue,
+# review or comment. The note appears in the README's Note column. Tags are kept in
+# contributions.json only, unless you set "readme_show_tags": true in the config.
+#
+# Example:
+#
+# "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/12345":
+#   note: Fixed a race that made CI flaky for every k8s component
+#   tags: [testing, reliability]
+#
+# A plain string works too:
+#
+# "https://github.com/open-telemetry/semantic-conventions/issues/678#issuecomment-1": Proposed the naming that was adopted

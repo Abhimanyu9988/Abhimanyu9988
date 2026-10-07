@@ -1,0 +1,64 @@
+name: Contribution log
+
+# Rebuilds the contribution log in this repo's README from GitHub's public record.
+# Daily runs look back two weeks; Sunday runs (and "full" manual runs) re-read
+# everything, which also drops anything you've deleted.
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Re-read your whole history"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # only to commit README.md and contributions.json in this repo
+
+concurrency:
+  group: contrib-log
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get oss-scout
+        uses: actions/checkout@v4
+        with:
+          repository: Abhimanyu9988/oss-scout
+          ref: main
+          path: .oss-scout
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install YAML support for annotations
+        run: pip install --quiet pyyaml
+
+      - name: Update the log
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PYTHONPATH: .oss-scout
+        run: |
+          FULL=""
+          if [ "${{ inputs.full }}" = "true" ] || [ "$(date -u +%u)" = "7" ]; then FULL="--full"; fi
+          python -m scout log $FULL
+
+      - name: Commit if anything changed
+        run: |
+          git add README.md contributions.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update contribution log"
+          git push
