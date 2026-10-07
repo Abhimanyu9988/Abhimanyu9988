@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "component": "area:k8s",
+      "date": "2026-10-07",
+      "number": 4184,
+      "repo": "open-telemetry/semantic-conventions",
+      "state": "open",
+      "title": "[k8s] Clarify k8s.pod.memory.working_set description",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184"
+    },
+    {
       "component": "receiver/k8scluster",
       "date": "2026-10-07",
       "number": 51856,
@@ -74,14 +84,7 @@
       "merged": "2026-10-06",
       "merged_by": "TylerHelmuth",
       "number": 51657,
-      "recognition": [
-        {
-          "by": "krisztianfekete",
-          "date": "2026-10-06",
-          "text": "Thanks, added a few comments!",
-          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657#pullrequestreview-5425438471"
-        }
-      ],
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "state": "merged",
       "title": "[chore][internal/k8sinventory] Fix flaky cache sync tests",
@@ -249,20 +252,8 @@
         {
           "by": "ebrdarSplunk",
           "date": "2026-09-18",
-          "text": "Thanks for picking this up — this is a real documentation gap, and the failover-cluster note is the kind of thing that costs people hours. A few things before I can approve. ## Blocking **The…",
+          "text": "Thanks for picking this up — this is a real documentation gap, and the failover-cluster note is the kind of thing that costs people hours.",
           "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#pullrequestreview-5247471462"
-        },
-        {
-          "by": "ebrdarSplunk",
-          "date": "2026-09-18",
-          "text": "@Abhimanyu9988 thank yuo for addressing all Nit: the example uses the URL form, which is why you needed the URL-encoding caveat. The ADO form mirrors what the receiver builds internally for…",
-          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#pullrequestreview-5250084178"
-        },
-        {
-          "by": "singhvibhanshu",
-          "date": "2026-09-21",
-          "text": "This PR has been approved by the code-owner. Could someone from @open-telemetry/collector-contrib-approvers please take a look at it? Thanks!",
-          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138#issuecomment-5759761745"
         }
       ],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -304,6 +295,33 @@
       "title": "[processor/probabilisticsampler] Add Warnings section to README",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636"
+    },
+    {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-04-10",
+      "date_label": "2026-04",
+      "doi": "10.1109/iecct68664.2026.11541572",
+      "kind": "conference-paper",
+      "number": 0,
+      "repo": "",
+      "title": "Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/iecct68664.2026.11541572",
+      "venue": "2026 International Conference on Recent Advancement in Electrical, Computer and Communication Technologies (IECCT)"
+    },
+    {
+      "component": "general",
+      "date": "2026-01-01",
+      "date_label": "2026",
+      "number": 0,
+      "org": "Springer Nature",
+      "repo": "",
+      "role": "reviewer",
+      "title": "Peer review for Discover Computing",
+      "type": "peer_review",
+      "url": "https://orcid.org/0009-0005-1179-009X#review-27918957",
+      "venue": "Discover Computing"
     },
     {
       "component": "general",
