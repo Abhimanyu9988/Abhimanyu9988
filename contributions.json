@@ -2,11 +2,23 @@
   "records": [
     {
       "component": "area:k8s",
+      "date": "2026-10-08",
+      "number": 4184,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/pull/4184",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Clarify memory working set metric descriptions",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184#issuecomment-6058110382"
+    },
+    {
+      "component": "area:k8s",
       "date": "2026-10-07",
       "number": 4184,
       "repo": "open-telemetry/semantic-conventions",
       "state": "open",
-      "title": "[k8s] Clarify k8s.pod.memory.working_set description",
+      "title": "[k8s] Clarify memory working set metric descriptions",
       "type": "pr",
       "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184"
     },
@@ -40,7 +52,7 @@
       "number": 4158,
       "repo": "open-telemetry/semantic-conventions",
       "state": "open",
-      "title": "[k8s] Add Pod level memory limit and request metrics",
+      "title": "[k8s] Add Pod/container level memory metrics",
       "type": "pr",
       "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158"
     },

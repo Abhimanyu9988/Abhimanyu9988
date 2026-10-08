@@ -33,10 +33,10 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 
 ### Recent activity
 
-- 2026-10-07 · PR · open · [#4184 [k8s] Clarify k8s.pod.memory.working_set description](https://github.com/open-telemetry/semantic-conventions/pull/4184) · semantic-conventions
+- 2026-10-07 · PR · open · [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) · semantic-conventions
 - 2026-10-07 · Comment · [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) · opentelemetry-collector-contrib
 - 2026-10-05 · Comment · [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) · opentelemetry-helm-charts
-- 2026-10-01 · PR · open · [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) · semantic-conventions
+- 2026-10-01 · PR · open · [#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) · semantic-conventions
 - 2026-09-30 · Comment · [#4133 [k8s] Define memory pod/container level limit and request metrics](https://github.com/open-telemetry/semantic-conventions/issues/4133#issuecomment-5919458589) · semantic-conventions
 
 ### Publications
@@ -92,8 +92,8 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-07 | PR · open | [#4184 [k8s] Clarify k8s.pod.memory.working_set description](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
-| 2026-10-01 | PR · open | [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
+| 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
+| 2026-10-01 | PR · open | [#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
 
 </details>
 
