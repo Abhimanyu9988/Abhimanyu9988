@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "author": "rajrohanyadav",
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-09",
+      "number": 51638,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[receiver/flinkmetrics] Add opt-in flink.job.id resource attribute",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975"
+    },
+    {
       "component": "receiver/flinkmetrics",
       "date": "2026-10-09",
       "number": 51892,
