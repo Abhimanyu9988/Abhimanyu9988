@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-09",
+      "number": 51892,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] is unmaintained",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361"
+    },
+    {
       "component": "area:k8s",
       "date": "2026-10-08",
       "number": 4184,

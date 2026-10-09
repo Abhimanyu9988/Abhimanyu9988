@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 3 open · **3 PRs reviewed** · 11 comments on others' issues and PRs · 2 issues opened
+**2 merged PRs** · 3 open · **3 PRs reviewed** · 12 comments on others' issues and PRs · 2 issues opened
 
 Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -33,11 +33,11 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 
 ### Recent activity
 
+- 2026-10-09 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) · opentelemetry-collector-contrib
 - 2026-10-08 · PR · open · [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) · opentelemetry-helm-charts
 - 2026-10-08 · Review · approved · [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) · opentelemetry-collector-contrib
 - 2026-10-07 · PR · open · [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) · semantic-conventions
 - 2026-10-07 · Comment · [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) · opentelemetry-collector-contrib
-- 2026-10-05 · Comment · [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) · opentelemetry-helm-charts
 
 ### Publications
 
@@ -83,6 +83,15 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 | Date | Type | Item |
 |---|---|---|
 | 2026-09-30 | PR · merged 2026-10-06 | [#51657 [chore][internal/k8sinventory] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657) |
+
+</details>
+
+<details>
+<summary><b>receiver/flinkmetrics</b> · 1 comment</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
 
 </details>
 
