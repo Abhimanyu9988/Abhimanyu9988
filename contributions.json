@@ -13,6 +13,28 @@
       "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184#issuecomment-6058110382"
     },
     {
+      "component": "general",
+      "date": "2026-10-08",
+      "number": 2456,
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "state": "open",
+      "title": "fix(operator): allow overriding only manager.targetAllocatorImage.repository",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456"
+    },
+    {
+      "author": "ThyTran1402",
+      "component": "receiver/k8scluster",
+      "date": "2026-10-08",
+      "number": 51874,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100"
+    },
+    {
       "component": "area:k8s",
       "date": "2026-10-07",
       "number": 4184,
