@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 3 open · **4 PRs reviewed** · 12 comments on others' issues and PRs · 2 issues opened
+**2 merged PRs** · 3 in review · 3 closed · **4 PRs reviewed** · 12 comments on others' issues and PRs · 2 issues opened
 
 Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -31,13 +31,25 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 - **[#51657 [chore][internal/k8sinventory] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657)** · `internal/k8sinventory` · merged 2026-10-06 by TylerHelmuth · +29 −2 in 1 file · fixes [#50433](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50433)
 - **[#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138)** · `receiver/sqlserver` · merged 2026-09-21 by songy23 · approved by ebrdarSplunk and paulojmdias · +42 −0 in 1 file · fixes [#50774](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774)
 
+### In review
+
+- **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · opentelemetry-helm-charts · opened 2026-10-08
+- **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · semantic-conventions · opened 2026-10-07
+- **[#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · semantic-conventions · opened 2026-10-01
+
+### Closed without merging
+
+- **[#51323 [chore] [processor/transform] Regenerate config schema](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51323)** · `processor/transform` · opentelemetry-collector-contrib · opened 2026-09-21
+- **[#51150 [receiver/sqlserver] Fix duplicate xmlns declarations in obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51150)** · `receiver/sqlserver` · opentelemetry-collector-contrib · opened 2026-09-17
+- **[#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-08-31
+
 ### Recent activity
 
 - 2026-10-09 · Review · approved · [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) · opentelemetry-collector-contrib
 - 2026-10-09 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) · opentelemetry-collector-contrib
-- 2026-10-08 · PR · open · [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) · opentelemetry-helm-charts
 - 2026-10-08 · Review · approved · [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) · opentelemetry-collector-contrib
-- 2026-10-07 · PR · open · [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) · semantic-conventions
+- 2026-10-07 · Comment · [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) · opentelemetry-collector-contrib
+- 2026-10-05 · Comment · [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) · opentelemetry-helm-charts
 
 ### Publications
 
@@ -55,7 +67,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector-contrib
 
 <details>
-<summary><b>receiver/sqlserver</b> · 1 PR · 2 PRs reviewed · 4 comments</summary>
+<summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 4 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
@@ -63,6 +75,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-09-21 | Review · approved (2 rounds) | [#51231 [receiver/sqlserver] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269889722) |
 | 2026-09-21 | Review · approved (2 rounds) | [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#pullrequestreview-5271103457) |
 | 2026-09-21 | Comment | [#50774 [receiver/sqlserver] TLS handshake fails on Windows Server 2012 R2 hosts; encrypt=disable is the workaround (diagnosis for #44058)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5764071218) |
+| 2026-09-17 | PR · closed | [#51150 [receiver/sqlserver] Fix duplicate xmlns declarations in obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51150) |
 | 2026-09-17 | PR · merged 2026-09-21 | [#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138) |
 | 2026-09-17 | Comment | [#50111 [receiver/sqlserver] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111#issuecomment-5717114483) |
 | 2026-09-14 | Comment | [#50774 [receiver/sqlserver] TLS handshake fails on Windows Server 2012 R2 hosts; encrypt=disable is the workaround (diagnosis for #44058)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5668652073) |
@@ -95,6 +108,24 @@ _2 older items kept in [contributions.json](contributions.json)._
 | Date | Type | Item |
 |---|---|---|
 | 2026-09-30 | PR · merged 2026-10-06 | [#51657 [chore][internal/k8sinventory] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657) |
+
+</details>
+
+<details>
+<summary><b>processor/probabilisticsampler</b> · 1 PR</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-08-31 | PR · closed | [#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636) |
+
+</details>
+
+<details>
+<summary><b>processor/transform</b> · 1 PR</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-09-21 | PR · closed | [#51323 [chore] [processor/transform] Regenerate config schema](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51323) |
 
 </details>
 
