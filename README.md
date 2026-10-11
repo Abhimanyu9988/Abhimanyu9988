@@ -18,9 +18,9 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 3 in review · 3 closed · **4 PRs reviewed** · 12 comments on others' issues and PRs · 2 issues opened
+**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 13 comments on others' issues and PRs · 2 issues opened
 
-Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
+Active since Feb 2024 across 5 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
 1 publication · 1 peer review for Discover Computing
 
@@ -33,6 +33,7 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 
 ### In review
 
+- **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
 - **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · opentelemetry-helm-charts · opened 2026-10-08
 - **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · semantic-conventions · opened 2026-10-07
 - **[#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · semantic-conventions · opened 2026-10-01
@@ -45,11 +46,11 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `internal/
 
 ### Recent activity
 
+- 2026-10-10 · Review · comments · [#50781 [chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021) · opentelemetry-collector-contrib
+- 2026-10-10 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) · opentelemetry-collector-contrib
 - 2026-10-09 · Review · approved · [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) · opentelemetry-collector-contrib
 - 2026-10-09 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) · opentelemetry-collector-contrib
 - 2026-10-08 · Review · approved · [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) · opentelemetry-collector-contrib
-- 2026-10-07 · Comment · [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) · opentelemetry-collector-contrib
-- 2026-10-05 · Comment · [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) · opentelemetry-helm-charts
 
 ### Publications
 
@@ -83,6 +84,16 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>processor/probabilisticsampler</b> · 2 PRs</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-10 | PR · open | [#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
+| 2026-08-31 | PR · closed | [#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636) |
+
+</details>
+
+<details>
 <summary><b>receiver/flinkmetrics</b> · 1 PR reviewed · 1 comment</summary>
 
 | Date | Type | Item |
@@ -103,6 +114,15 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>exporter/elasticsearch</b> · 1 PR reviewed</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-10 | Review · comments | [#50781 [chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021) |
+
+</details>
+
+<details>
 <summary><b>internal/k8sinventory</b> · 1 PR</summary>
 
 | Date | Type | Item |
@@ -112,11 +132,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>processor/probabilisticsampler</b> · 1 PR</summary>
+<summary><b>processor/k8sattributes</b> · 1 comment</summary>
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-08-31 | PR · closed | [#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636) |
+| 2026-10-10 | Comment | [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) |
 
 </details>
 

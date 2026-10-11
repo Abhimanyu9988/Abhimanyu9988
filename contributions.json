@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "component": "processor/probabilisticsampler",
+      "date": "2026-10-10",
+      "number": 51952,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952"
+    },
+    {
+      "author": "singhvibhanshu",
+      "component": "exporter/elasticsearch",
+      "date": "2026-10-10",
+      "number": 50781,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "commented",
+      "title": "[chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021"
+    },
+    {
+      "component": "processor/k8sattributes",
+      "date": "2026-10-10",
+      "number": 51878,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236"
+    },
+    {
       "author": "rajrohanyadav",
       "component": "receiver/flinkmetrics",
       "date": "2026-10-09",
