@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "component": "receiver/sqlserver",
+      "date": "2026-10-11",
+      "number": 50135,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/sqlserver] Emit well-formed obfuscated query plans",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062"
+    },
+    {
       "component": "processor/probabilisticsampler",
       "date": "2026-10-10",
       "number": 51952,

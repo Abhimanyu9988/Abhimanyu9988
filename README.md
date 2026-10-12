@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 13 comments on others' issues and PRs · 2 issues opened
+**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 14 comments on others' issues and PRs · 2 issues opened
 
 Active since Feb 2024 across 5 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -46,11 +46,11 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-11 · Comment on PR · [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062) · opentelemetry-collector-contrib
 - 2026-10-10 · Review · comments · [#50781 [chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021) · opentelemetry-collector-contrib
 - 2026-10-10 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) · opentelemetry-collector-contrib
 - 2026-10-09 · Review · approved · [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) · opentelemetry-collector-contrib
 - 2026-10-09 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) · opentelemetry-collector-contrib
-- 2026-10-08 · Review · approved · [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -68,10 +68,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector-contrib
 
 <details>
-<summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 4 comments</summary>
+<summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 5 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-11 | Comment on PR | [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062) |
 | 2026-09-29 | Comment | [#49370 Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370#issuecomment-5888446619) |
 | 2026-09-21 | Review · approved (2 rounds) | [#51231 [receiver/sqlserver] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269889722) |
 | 2026-09-21 | Review · approved (2 rounds) | [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#pullrequestreview-5271103457) |
