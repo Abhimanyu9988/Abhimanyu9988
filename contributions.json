@@ -1,6 +1,64 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-12",
+      "number": 416,
+      "repo": "open-telemetry/sig-end-user",
+      "state": "open",
+      "title": "OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/sig-end-user/issues/416"
+    },
+    {
+      "component": "area:k8s",
+      "date": "2026-10-12",
+      "number": 4074,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4074",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "Add k8s owner spec",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339"
+    },
+    {
+      "component": "processor/k8sattributes",
+      "date": "2026-10-12",
+      "number": 51878,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474"
+    },
+    {
+      "component": "receiver/k8sevents",
+      "date": "2026-10-12",
+      "number": 50600,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[internal/k8sinventory] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600#issuecomment-6129013323"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-12",
+      "number": 49927,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221"
+    },
+    {
       "component": "receiver/sqlserver",
       "date": "2026-10-11",
       "number": 50135,

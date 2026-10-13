@@ -18,9 +18,9 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 14 comments on others' issues and PRs · 2 issues opened
+**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 18 comments on others' issues and PRs · 3 issues opened
 
-Active since Feb 2024 across 5 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
+Active since Feb 2024 across 6 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
 1 publication · 1 peer review for Discover Computing
 
@@ -46,11 +46,11 @@ Active since Feb 2024 across 5 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
-- 2026-10-11 · Comment on PR · [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062) · opentelemetry-collector-contrib
-- 2026-10-10 · Review · comments · [#50781 [chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021) · opentelemetry-collector-contrib
-- 2026-10-10 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) · opentelemetry-collector-contrib
-- 2026-10-09 · Review · approved · [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) · opentelemetry-collector-contrib
-- 2026-10-09 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) · opentelemetry-collector-contrib
+- 2026-10-12 · Issue · open · [#416 OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) · sig-end-user
+- 2026-10-12 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) · semantic-conventions
+- 2026-10-12 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474) · opentelemetry-collector-contrib
+- 2026-10-12 · Comment · [#50600 [internal/k8sinventory] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600#issuecomment-6129013323) · opentelemetry-collector-contrib
+- 2026-10-12 · Comment · [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -81,6 +81,16 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-09-17 | PR · merged 2026-09-21 | [#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138) |
 | 2026-09-17 | Comment | [#50111 [receiver/sqlserver] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111#issuecomment-5717114483) |
 | 2026-09-14 | Comment | [#50774 [receiver/sqlserver] TLS handshake fails on Windows Server 2012 R2 hosts; encrypt=disable is the workaround (diagnosis for #44058)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5668652073) |
+
+</details>
+
+<details>
+<summary><b>processor/k8sattributes</b> · 2 comments</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-12 | Comment | [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474) |
+| 2026-10-10 | Comment | [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) |
 
 </details>
 
@@ -133,15 +143,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>processor/k8sattributes</b> · 1 comment</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-10 | Comment | [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236) |
-
-</details>
-
-<details>
 <summary><b>processor/transform</b> · 1 PR</summary>
 
 | Date | Type | Item |
@@ -150,13 +151,32 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 </details>
 
-#### open-telemetry/semantic-conventions
-
 <details>
-<summary><b>area:k8s</b> · 2 PRs</summary>
+<summary><b>receiver/k8sevents</b> · 1 comment</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-12 | Comment | [#50600 [internal/k8sinventory] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600#issuecomment-6129013323) |
+
+</details>
+
+<details>
+<summary><b>receiver/kubeletstats</b> · 1 comment</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-12 | Comment | [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) |
+
+</details>
+
+#### open-telemetry/semantic-conventions
+
+<details>
+<summary><b>area:k8s</b> · 2 PRs · 1 comment</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |
 | 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
 | 2026-10-01 | PR · open | [#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
 
@@ -208,6 +228,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 | Date | Type | Item |
 |---|---|---|
 | 2026-10-08 | PR · open | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
+
+</details>
+
+#### open-telemetry/sig-end-user
+
+<details>
+<summary><b>general</b> · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-12 | Issue · open | [#416 OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) |
 
 </details>
 
