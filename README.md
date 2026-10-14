@@ -18,9 +18,9 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**2 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 18 comments on others' issues and PRs · 3 issues opened
+**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 18 comments on others' issues and PRs · 4 issues opened
 
-Active since Feb 2024 across 6 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
+Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
 1 publication · 1 peer review for Discover Computing
 
@@ -28,15 +28,16 @@ Active since Feb 2024 across 6 repositories · components `area:k8s`, `exporter/
 
 ### Merged
 
+- **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · merged 2026-10-13 by TylerHelmuth · +77 −58 in 39 files · fixes [#1866](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866)
 - **[#51657 [chore][internal/k8sinventory] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657)** · `internal/k8sinventory` · merged 2026-10-06 by TylerHelmuth · +29 −2 in 1 file · fixes [#50433](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50433)
 - **[#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138)** · `receiver/sqlserver` · merged 2026-09-21 by songy23 · approved by ebrdarSplunk and paulojmdias · +42 −0 in 1 file · fixes [#50774](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774)
 
 ### In review
 
+- **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
-- **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · opentelemetry-helm-charts · opened 2026-10-08
 - **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · semantic-conventions · opened 2026-10-07
-- **[#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · semantic-conventions · opened 2026-10-01
+- **[#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · semantic-conventions · opened 2026-10-01
 
 ### Closed without merging
 
@@ -46,11 +47,11 @@ Active since Feb 2024 across 6 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-13 · Issue · closed · [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) · community
 - 2026-10-12 · Issue · open · [#416 OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) · sig-end-user
 - 2026-10-12 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) · semantic-conventions
 - 2026-10-12 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474) · opentelemetry-collector-contrib
 - 2026-10-12 · Comment · [#50600 [internal/k8sinventory] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600#issuecomment-6129013323) · opentelemetry-collector-contrib
-- 2026-10-12 · Comment · [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -85,6 +86,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>receiver/flinkmetrics</b> · 1 PR · 1 PR reviewed · 1 comment</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-13 | PR · open | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
+| 2026-10-09 | Review · approved | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) |
+| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
+
+</details>
+
+<details>
 <summary><b>processor/k8sattributes</b> · 2 comments</summary>
 
 | Date | Type | Item |
@@ -101,16 +113,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 |---|---|---|
 | 2026-10-10 | PR · open | [#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
 | 2026-08-31 | PR · closed | [#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636) |
-
-</details>
-
-<details>
-<summary><b>receiver/flinkmetrics</b> · 1 PR reviewed · 1 comment</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-09 | Review · approved | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5469958975) |
-| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
 
 </details>
 
@@ -178,7 +180,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 |---|---|---|
 | 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |
 | 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
-| 2026-10-01 | PR · open | [#4158 [k8s] Add Pod/container level memory metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
+| 2026-10-01 | PR · open | [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
 
 </details>
 
@@ -227,7 +229,18 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-08 | PR · open | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
+| 2026-10-08 | PR · merged 2026-10-13 | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
+
+</details>
+
+#### open-telemetry/community
+
+<details>
+<summary><b>general</b> · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-13 | Issue · closed | [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) |
 
 </details>
 

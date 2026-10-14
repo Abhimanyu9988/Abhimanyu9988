@@ -1,6 +1,86 @@
 {
   "records": [
     {
+      "component": "area:k8s",
+      "date": "2026-10-13",
+      "number": 4158,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/pull/4158",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Add Pod level memory limit and request metrics",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158#issuecomment-6150919989"
+    },
+    {
+      "component": "area:k8s",
+      "date": "2026-10-13",
+      "number": 4158,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/pull/4158",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Add Pod level memory limit and request metrics",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158#issuecomment-6150771770"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-13",
+      "number": 52019,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019#issuecomment-6152787258"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-13",
+      "number": 52019,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-13",
+      "number": 3770,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/community/issues/3770",
+      "repo": "open-telemetry/community",
+      "title": "REQUEST: New membership for Abhimanyu9988",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/community/issues/3770#issuecomment-6151628301"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-13",
+      "number": 3770,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/community/issues/3770",
+      "repo": "open-telemetry/community",
+      "title": "REQUEST: New membership for Abhimanyu9988",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/community/issues/3770#issuecomment-6151551344"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-13",
+      "number": 3770,
+      "repo": "open-telemetry/community",
+      "state": "closed",
+      "title": "REQUEST: New membership for Abhimanyu9988",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/community/issues/3770"
+    },
+    {
       "component": "general",
       "date": "2026-10-12",
       "number": 416,
@@ -105,6 +185,18 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6102663236"
     },
     {
+      "component": "general",
+      "date": "2026-10-09",
+      "number": 2456,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "fix(operator): allow overriding only manager.targetAllocatorImage.repository",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456#issuecomment-6081101123"
+    },
+    {
       "author": "rajrohanyadav",
       "component": "receiver/flinkmetrics",
       "date": "2026-10-09",
@@ -141,11 +233,24 @@
       "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184#issuecomment-6058110382"
     },
     {
+      "additions": 77,
+      "approved_by": [
+        "TylerHelmuth"
+      ],
       "component": "general",
       "date": "2026-10-08",
+      "deletions": 58,
+      "discussion": 10,
+      "files": 39,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866"
+      ],
+      "merged": "2026-10-13",
+      "merged_by": "TylerHelmuth",
       "number": 2456,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-helm-charts",
-      "state": "open",
+      "state": "merged",
       "title": "fix(operator): allow overriding only manager.targetAllocatorImage.repository",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456"
@@ -202,7 +307,7 @@
       "number": 4158,
       "repo": "open-telemetry/semantic-conventions",
       "state": "open",
-      "title": "[k8s] Add Pod/container level memory metrics",
+      "title": "[k8s] Add Pod level memory limit and request metrics",
       "type": "pr",
       "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158"
     },
