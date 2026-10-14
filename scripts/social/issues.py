@@ -59,8 +59,11 @@ def render(event, decision):
     if decision.get("note"):
         parts.append(decision["note"])
     parts.append("\n**To publish:** edit the text in the box if you like, then comment "
-                 "`/post`.\nOther commands: `/redraft make it shorter` · `/roundup` (save "
-                 "for Friday's roundup) · close this issue to drop it.\n")
+                 "`/post`. It goes out right away as a public post from your own profile.\n"
+                 "**Picture (optional):** attach one in a comment first; `/post` includes the "
+                 "latest one you attached.\n"
+                 "Other commands: `/redraft make it warmer` · `/roundup` (save for Friday's "
+                 "roundup) · `/post noimage` · close this issue to drop it.\n")
     parts += [START, _fence(decision["draft"]), END, ""]
     if decision.get("alternative"):
         who = decision.get("alt_by") or "other editor"

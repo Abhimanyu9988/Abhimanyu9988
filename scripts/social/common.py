@@ -41,6 +41,19 @@ def http(method, url, headers=None, body=None, timeout=120):
         raise HttpError(err.code, raw, dict(err.headers)) from None
 
 
+def http_bytes(url, headers=None, timeout=60, limit=10 * 1024 * 1024):
+    """GET binary content. Returns (bytes, content_type)."""
+    req = urllib.request.Request(url, headers=dict(headers or {}, **{"User-Agent": "profile-social-panel"}))
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = resp.read(limit + 1)
+            if len(data) > limit:
+                raise HttpError(413, f"image larger than {limit // (1024 * 1024)} MB")
+            return data, resp.headers.get("Content-Type", "")
+    except urllib.error.HTTPError as err:
+        raise HttpError(err.code, err.read().decode("utf-8", "replace")) from None
+
+
 def _parse(raw):
     try:
         return json.loads(raw) if raw.strip() else None

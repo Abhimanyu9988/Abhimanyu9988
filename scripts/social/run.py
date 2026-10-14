@@ -12,6 +12,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import time
 
@@ -22,6 +23,7 @@ import issues  # noqa: E402
 import linkedin  # noqa: E402
 import llm  # noqa: E402
 import panel  # noqa: E402
+import tokenstore  # noqa: E402
 from common import (HttpError, ensure_labels, env, gh, load, log, owner,  # noqa: E402
                     repo, save)
 
@@ -93,10 +95,10 @@ def handle(event, handled):
 
 
 def token_reminder():
-    expires = env("LINKEDIN_TOKEN_EXPIRES")
+    expires = tokenstore.expires()
     if not expires:
         return
-    days = (int(expires) - time.time()) / 86400
+    days = (expires - time.time()) / 86400
     if days > 7:
         return
     open_ones = gh("GET", f"/repos/{repo()}/issues",
@@ -107,9 +109,60 @@ def token_reminder():
     gh("POST", f"/repos/{repo()}/issues", {
         "title": f"LinkedIn connection {when}",
         "labels": ["linkedin-auth"], "assignees": [owner()],
-        "body": ("LinkedIn posting tokens last 60 days. To renew, run this on your Mac "
-                 "inside your profile repository folder, then close this issue:\n\n"
-                 "```\npython3 scripts/social/linkedin_auth.py\n```")})
+        "body": ("LinkedIn posting tokens last 60 days.\n\n**Renew from your phone:** "
+                 "comment `/linkedin` on this issue and follow the link you get back.")})
+
+
+IMG_MD = re.compile(r"!\[([^\]]*)\]\((https://[^)\s]+)\)")
+IMG_HTML = re.compile(r"<img\b[^>]*>", re.I)
+
+
+def _images_in(text):
+    """(url, alt) pairs for pictures in markdown or the <img> tags GitHub mobile inserts."""
+    found = [(m.start(), m.group(2), m.group(1)) for m in IMG_MD.finditer(text or "")]
+    for m in IMG_HTML.finditer(text or ""):
+        src = re.search(r'src="(https://[^"]+)"', m.group(0))
+        alt = re.search(r'alt="([^"]*)"', m.group(0))
+        if src:
+            found.append((m.start(), src.group(1), alt.group(1) if alt else ""))
+    return [(u, a) for _, u, a in sorted(found)]
+
+
+def latest_image(number, body):
+    """The most recent picture you attached: your newest comment with one, else the body."""
+    comments = gh("GET", f"/repos/{repo()}/issues/{number}/comments", params={"per_page": 100})
+    for c in reversed(comments or []):
+        if (c.get("user") or {}).get("login", "").lower() == owner().lower():
+            imgs = _images_in(c.get("body"))
+            if imgs:
+                return imgs[-1]
+    imgs = _images_in(body)
+    return imgs[-1] if imgs else None
+
+
+def _close_auth_reminders():
+    for issue in gh("GET", f"/repos/{repo()}/issues",
+                    params={"labels": "linkedin-auth", "state": "open", "per_page": 20}):
+        issues.comment(issue["number"], "Renewed. Closing this reminder.")
+        gh("PATCH", f"/repos/{repo()}/issues/{issue['number']}", {"state": "closed"})
+
+
+def linkedin_code(text):
+    """Handle '/linkedin-code CODE STATE'. Returns a message for the user."""
+    parts = text.split()
+    if len(parts) < 3:
+        return "That renewal message is incomplete. Comment `/linkedin` to get a fresh link."
+    code, state = parts[1], parts[2]
+    if not tokenstore.state_ok(state):
+        return ("That renewal link is out of date or wasn't issued by this repository. "
+                "Comment `/linkedin` to get a fresh one.")
+    try:
+        name, expires_at = tokenstore.exchange(code)
+    except RuntimeError as err:
+        return str(err)
+    _close_auth_reminders()
+    until = dt.datetime.fromtimestamp(expires_at, dt.timezone.utc).date().isoformat()
+    return f"LinkedIn renewed{' for ' + name if name else ''}. Posting works until {until}."
 
 
 def cmd_daily(args):
@@ -183,13 +236,29 @@ def cmd_command(args):
         issues.react(c["id"], "eyes")
         body = gh("GET", f"/repos/{repo()}/issues/{number}")["body"] or ""
         draft = issues.read_draft(body)
-        if not env("LINKEDIN_ACCESS_TOKEN"):
+        token, author, expires_at = tokenstore.current()
+        if not token:
             issues.comment(number, "LinkedIn isn't connected yet, so I can't publish. Copy the "
                                    "text above into LinkedIn, or connect posting by running "
                                    "`python3 scripts/social/linkedin_auth.py` on your Mac.")
             return
+        if expires_at and expires_at < time.time():
+            issues.comment(number, "The LinkedIn connection has expired. Comment `/linkedin` "
+                                   "to renew it from your phone, then `/post` again.")
+            return
+        image, alt = None, ""
+        if "noimage" not in rest.lower().replace(" ", "").replace("-", ""):
+            found = latest_image(number, body)
+            if found:
+                try:
+                    image = linkedin.fetch_image(found[0])
+                    alt = found[1]
+                except RuntimeError as err:
+                    issues.comment(number, f"Not posted: {err}. Attach another picture, or "
+                                           "comment `/post noimage` to post without one.")
+                    raise SystemExit(1)
         try:
-            url = linkedin.publish(draft)
+            url = linkedin.publish(draft, token, author, image, alt)
         except (RuntimeError, ValueError) as err:
             issues.comment(number, f"Publishing failed: {err}")
             raise SystemExit(1)
@@ -199,7 +268,9 @@ def cmd_command(args):
                       "kind": meta.get("kind"), "ref": meta.get("ref"),
                       "first_line": draft.splitlines()[0][:160] if draft else ""})
         save("posts.json", posts[-200:])
-        issues.comment(number, f"Published on LinkedIn: {url}")
+        issues.comment(number, f"Published on LinkedIn{' with your picture' if image else ''}: "
+                               f"{url}\n\nTo tag people, edit the post on LinkedIn and type @ "
+                               "before their names.")
         gh("PATCH", f"/repos/{repo()}/issues/{number}",
            {"state": "closed", "labels": sorted((labels - {"linkedin-draft", "panel-split"})
                                                 | {"linkedin-posted"})})
@@ -215,7 +286,12 @@ def cmd_command(args):
             return
         issues.react(c["id"], "eyes")
         body = gh("GET", f"/repos/{repo()}/issues/{number}")["body"] or ""
-        event = _event_from_meta(issues.read_meta(body))
+        meta = issues.read_meta(body)
+        if meta.get("kind") == "milestone":
+            # re-read the links in the issue so PR states are current
+            event = events.manual_event(meta.get("title", ""), body, meta.get("ref"))
+        else:
+            event = _event_from_meta(meta)
         result = panel.revise(issues.read_draft(body), rest, event, style(), recent_posts())
         gh("PATCH", f"/repos/{repo()}/issues/{number}",
            {"body": issues.replace_draft(body, result["draft"], result.get("alternative"),
@@ -242,6 +318,30 @@ def cmd_command(args):
         link = issues.create_draft_issue(ev, decision)
         issues.comment(number, f"Draft ready: {link}")
         issues.react(c["id"], "rocket")
+
+    elif word == "/linkedin":
+        missing = tokenstore.renewal_ready()
+        if missing:
+            issues.comment(number, "Phone renewal isn't set up yet (missing: "
+                                   + ", ".join(missing) + "). Run this once on your Mac in "
+                                   "your profile repository folder:\n\n```\npython3 "
+                                   "scripts/social/linkedin_auth.py\n```")
+            return
+        issues.comment(number, (
+            f"**[Renew LinkedIn posting]({tokenstore.authorize_url()})**\n\n"
+            "1. Tap the link and click **Allow** on LinkedIn.\n"
+            "2. A GitHub page opens with a new issue already filled in. Tap **Create** "
+            "(or **Submit new issue**).\n\nThe link works today and tomorrow."))
+        issues.react(c["id"], "+1")
+
+    elif word == "/linkedin-code":
+        message = linkedin_code(text)
+        try:  # don't leave the one-time code visible
+            gh("PATCH", f"/repos/{repo()}/issues/comments/{c['id']}",
+               {"body": "/linkedin-code (used; removed)"})
+        except HttpError:
+            pass
+        issues.comment(number, message)
 
     elif word == "/roundup":
         body = gh("GET", f"/repos/{repo()}/issues/{number}")["body"] or ""
@@ -277,6 +377,20 @@ def cmd_milestone(args):
         "assignees": [owner()]})
 
 
+def cmd_linkedin_issue(args):
+    """A new issue whose body is '/linkedin-code CODE STATE' (from the renewal page)."""
+    issue = _event_payload()["issue"]
+    if issue["user"]["login"].lower() != owner().lower():
+        return
+    body = (issue.get("body") or "").strip()
+    if not body.startswith("/linkedin-code"):
+        return
+    message = linkedin_code(body)
+    gh("PATCH", f"/repos/{repo()}/issues/{issue['number']}",
+       {"body": "/linkedin-code (used; removed)", "state": "closed"})
+    issues.comment(issue["number"], message)
+
+
 def cmd_selftest(args):
     try:
         ok, model = llm.selftest(args.provider)
@@ -295,11 +409,13 @@ def main():
     sub.add_parser("weekly")
     sub.add_parser("command")
     sub.add_parser("milestone")
+    sub.add_parser("linkedin-issue")
     s = sub.add_parser("selftest")
     s.add_argument("provider", choices=list(llm.PROVIDERS))
     args = ap.parse_args()
     {"daily": cmd_daily, "weekly": cmd_weekly, "command": cmd_command,
-     "milestone": cmd_milestone, "selftest": cmd_selftest}[args.cmd](args)
+     "milestone": cmd_milestone, "linkedin-issue": cmd_linkedin_issue,
+     "selftest": cmd_selftest}[args.cmd](args)
 
 
 if __name__ == "__main__":

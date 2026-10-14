@@ -318,20 +318,50 @@ def org_events():
 # ---------------------------------------------------------------- manual
 
 URL_RE = re.compile(r"https://github\.com/([^/\s]+/[^/\s]+)/(pull|issues)/(\d+)")
+PR_RE = re.compile(r"https://github\.com/([^/\s]+/[^/\s#?)]+)/pull/(\d+)")
+
+
+def pr_status_lines(texts, limit=12):
+    """Current state of every PR linked in the given texts, fetched now."""
+    seen, lines = [], []
+    for text in texts:
+        for repo, num in PR_RE.findall(text or ""):
+            if (repo, num) in seen or len(seen) >= limit:
+                continue
+            seen.append((repo, num))
+            try:
+                pr = gh("GET", f"/repos/{repo}/pulls/{num}")
+            except HttpError:
+                continue
+            if pr.get("merged_at"):
+                state = f"MERGED on {pr['merged_at'][:10]}"
+            elif pr.get("state") == "open":
+                state = "OPEN (in review, not merged)"
+            else:
+                state = "CLOSED without merging"
+            lines.append(f"- {repo}#{num} {pr['title']}: {state}")
+    if not lines:
+        return ""
+    return ("\nCURRENT STATUS OF THE PULL REQUESTS MENTIONED (checked just now; this overrides "
+            "any older wording above):\n" + "\n".join(lines))
 
 
 def manual_event(title, text, source_url=None):
     parts = [f"In his own words:\n{trim(text, 3000)}"]
+    bodies = [text]
     for repo, kind, num in URL_RE.findall(text or "")[:2]:
         try:
             if kind == "pull":
                 parts.append("\n" + describe_pr(repo, num))
             else:
                 issue = gh("GET", f"/repos/{repo}/issues/{num}")
+                bodies.append(issue.get("body") or "")
                 parts.append(f"\nReferenced issue {repo}#{num}: {issue['title']} "
-                             f"({issue['state']})\n" + trim(issue.get("body") or "", 1500))
+                             f"({issue['state']}, written {issue.get('created_at', '')[:10]})\n"
+                             + trim(issue.get("body") or "", 2500))
         except HttpError:
             pass
+    parts.append(pr_status_lines(bodies))
     return {
         "kind": "milestone",
         "id": source_url or f"manual-{dt.datetime.now().timestamp():.0f}",

@@ -150,9 +150,51 @@ def main():
     run(["gh", "variable", "set", "LINKEDIN_TOKEN_EXPIRES", "-R", target,
          "--body", str(expires)])
     days = (expires - int(time.time())) // 86400
-    print(f"\n  ✓ Connected as {me.get('name', urn)}. Posting works for {days} days;")
-    print("    you'll get a reminder issue a week before it expires.\n")
+    print(f"\n  ✓ Connected as {me.get('name', urn)}. Posting works for {days} days.")
+
+    # What phone renewal needs: the app credentials and a key for the encrypted token file.
+    run(["gh", "variable", "set", "LINKEDIN_CLIENT_ID", "-R", target, "--body", client_id])
+    run(["gh", "secret", "set", "LINKEDIN_CLIENT_SECRET", "-R", target], stdin=client_secret)
+    token_key = keychain_get("token_key") or secrets.token_urlsafe(32)
+    keychain_set("token_key", token_key)
+    run(["gh", "secret", "set", "LINKEDIN_TOKEN_KEY", "-R", target], stdin=token_key)
+    setup_pages(target)
+
+
+def setup_pages(target):
+    """Serve docs/linkedin.html on GitHub Pages so renewals can finish on a phone."""
+    try:
+        run(["gh", "api", f"repos/{target}/contents/docs/linkedin.html", "--silent"])
+    except subprocess.CalledProcessError:
+        print("  Phone renewal: finishes after the files are pushed (setup does this).")
+        return False
+    try:
+        info = json.loads(run(["gh", "api", f"repos/{target}/pages"]))
+    except subprocess.CalledProcessError:
+        branch = run(["gh", "repo", "view", target, "--json", "defaultBranchRef",
+                      "-q", ".defaultBranchRef.name"]).strip() or "main"
+        payload = json.dumps({"source": {"branch": branch, "path": "/docs"}})
+        try:
+            info = json.loads(run(["gh", "api", "-X", "POST", f"repos/{target}/pages",
+                                   "--input", "-"], stdin=payload))
+        except subprocess.CalledProcessError as err:
+            print(f"  ! Couldn't turn on GitHub Pages ({(err.stderr or '').strip()[:150]}).")
+            print("    Phone renewal stays off; renew on this Mac with this script instead.")
+            return False
+    site = (info.get("html_url") or f"https://{target.split('/')[0].lower()}.github.io/"
+            f"{target.split('/')[1]}/").rstrip("/")
+    redirect = site + "/linkedin.html"
+    run(["gh", "variable", "set", "LINKEDIN_PAGES_REDIRECT", "-R", target, "--body", redirect])
+    print("\n  Phone renewal is ready. One last step in your LinkedIn app's Auth tab:")
+    print("  add this second redirect URL, next to the localhost one:\n")
+    print(f"      {redirect}\n")
+    print("  From then on, when the reminder issue appears, comment /linkedin on it")
+    print("  from your phone. No laptop needed.\n")
+    return True
 
 
 if __name__ == "__main__":
-    main()
+    if "--pages-only" in sys.argv:
+        setup_pages(repo())
+    else:
+        main()

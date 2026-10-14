@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>LinkedIn renewal</title>
+<style>
+  :root { --bg:#fff; --fg:#1f2328; --muted:#59636e; --btn:#1f883d; --box:#f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --btn:#238636; --box:#161b22; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  main { max-width:520px; margin:0 auto; padding:40px 16px; }
+  h1 { font-size:22px; margin:0 0 12px; }
+  p { color:var(--muted); }
+  a.btn { display:block; text-align:center; background:var(--btn); color:#fff; text-decoration:none;
+          padding:14px; border-radius:8px; font-weight:600; margin:20px 0; }
+  code { display:block; background:var(--box); padding:12px; border-radius:8px; word-break:break-all; font-size:13px; }
+</style>
+</head>
+<body>
+<main id="out"><h1>LinkedIn renewal</h1><p>Working…</p></main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var out = document.getElementById("out");
+  var owner = location.hostname.split(".")[0];
+  var repo = location.pathname.split("/").filter(Boolean)[0] || owner;
+  if (q.get("error")) {
+    out.innerHTML = "<h1>LinkedIn didn't approve</h1><p></p>";
+    out.querySelector("p").textContent = q.get("error_description") || q.get("error");
+    return;
+  }
+  var code = q.get("code"), state = q.get("state");
+  if (!code || !state) {
+    out.innerHTML = "<h1>Nothing to do here</h1><p>This page finishes a LinkedIn renewal. " +
+      "Comment <b>/linkedin</b> on an issue in your profile repository to start one.</p>";
+    return;
+  }
+  var body = "/linkedin-code " + code + " " + state;
+  var url = "https://github.com/" + owner + "/" + repo + "/issues/new?title=" +
+    encodeURIComponent("LinkedIn renewal") + "&body=" + encodeURIComponent(body);
+  out.innerHTML = "<h1>Almost done</h1><p>Tap the button, then tap <b>Create</b> on the " +
+    "GitHub page. The code is removed from the issue as soon as it's used.</p>" +
+    "<a class='btn' id='go'>Finish on GitHub</a>" +
+    "<p>If that doesn't open, comment this on any issue in your profile repository:</p><code></code>";
+  out.querySelector("#go").href = url;
+  out.querySelector("code").textContent = body;
+  history.replaceState(null, "", location.pathname);
+})();
+</script>
+</body>
+</html>
