@@ -13,6 +13,9 @@ concurrency:
   group: contribution-log
   cancel-in-progress: false
 
+env:
+  CONTRIB_ORGS: open-telemetry
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,52 +26,34 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTRIB_USER: ${{ github.repository_owner }}
-          CONTRIB_ORGS: open-telemetry
           CONTRIB_MAX: "10"
         run: python3 scripts/update_contributions.py --new-merged-out "$RUNNER_TEMP/new_merged.json"
 
+      - name: AI panel on new merges, ORCID and memberships
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          ORCID_ID: ${{ vars.ORCID_ID }}
+          LINKEDIN_TOKEN_EXPIRES: ${{ vars.LINKEDIN_TOKEN_EXPIRES }}
+        run: python3 scripts/social/run.py daily --new-merged "$RUNNER_TEMP/new_merged.json"
+
       - name: Commit if changed
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "Contribution log unchanged"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md data/contributions.json
-          git commit -m "Update contribution log"
-          git push
-
-      - name: Open a LinkedIn post draft for each newly merged PR
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          count=$(python3 -c 'import json,sys; print(len(json.load(open(sys.argv[1]))))' "$RUNNER_TEMP/new_merged.json")
-          if [ "$count" = "0" ]; then
-            echo "No newly merged PRs"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
             exit 0
           fi
-          gh label create linkedin-draft --color 0A66C2 --description "Draft LinkedIn post" 2>/dev/null || true
-          python3 - "$RUNNER_TEMP/new_merged.json" "$RUNNER_TEMP" <<'PY'
-          import json, sys, os
-          entries = json.load(open(sys.argv[1]))
-          for i, e in enumerate(entries):
-              body = (
-                  "Merged upstream, ready to share. Edit the draft below, post it on LinkedIn, "
-                  "then close this issue.\n\n"
-                  f"PR: {e['url']}\n\n---\n\n"
-                  f"My pull request to {e['repo']} was merged: {e['title']}\n\n"
-                  "[One or two lines on the problem it solves and who it helps.]\n\n"
-                  "[What you reproduced or verified, and how.]\n\n"
-                  f"{e['url']}\n\n"
-                  "#OpenTelemetry #OpenSource #Observability #Kubernetes\n"
-              )
-              with open(os.path.join(sys.argv[2], f"draft_{i}.md"), "w") as fh:
-                  fh.write(body)
-              with open(os.path.join(sys.argv[2], f"draft_{i}.title"), "w") as fh:
-                  fh.write(f"LinkedIn draft: {e['repo'].split('/')[-1]}#{e['number']} merged")
-          PY
-          for f in "$RUNNER_TEMP"/draft_*.md; do
-            title=$(cat "${f%.md}.title")
-            gh issue create --title "$title" --body-file "$f" --label linkedin-draft --assignee "${{ github.repository_owner }}"
+          git commit -q -m "Update contribution log"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q && git push -q && exit 0
+            sleep $((i * 5))
           done
+          exit 1

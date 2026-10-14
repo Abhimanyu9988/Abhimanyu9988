@@ -1,19 +1,55 @@
 {
-  "merged": [],
-  "open": [
+  "merged": [
     {
-      "date": "2026-10-12",
-      "number": 416,
-      "repo": "open-telemetry/sig-end-user",
-      "title": "OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters",
-      "url": "https://github.com/open-telemetry/sig-end-user/issues/416"
+      "date": "2026-10-13",
+      "number": 2456,
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "fix(operator): allow overriding only manager.targetAllocatorImage.repository",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456"
     },
     {
-      "date": "2024-02-29",
-      "number": 254,
-      "repo": "open-telemetry/opentelemetry-network",
-      "title": "Kernel collector issue on ROSA OpenShift(4.14.12) Redhat host",
-      "url": "https://github.com/open-telemetry/opentelemetry-network/issues/254"
+      "date": "2026-10-06",
+      "number": 51657,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][internal/k8sinventory] Fix flaky cache sync tests",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657"
+    },
+    {
+      "date": "2026-09-21",
+      "number": 51138,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138"
+    }
+  ],
+  "open": [
+    {
+      "date": "2026-10-13",
+      "number": 52019,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019"
+    },
+    {
+      "date": "2026-10-10",
+      "number": 51952,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952"
+    },
+    {
+      "date": "2026-10-07",
+      "number": 4184,
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Clarify memory working set metric descriptions",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4184"
+    },
+    {
+      "date": "2026-10-01",
+      "number": 4158,
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Add Pod level memory limit and request metrics",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158"
     }
   ],
   "orgs": [
