@@ -319,6 +319,30 @@ def cmd_command(args):
         issues.comment(number, f"Draft ready: {link}")
         issues.react(c["id"], "rocket")
 
+    elif word == "/open":
+        body = gh("GET", f"/repos/{repo()}/issues/{number}")["body"] or ""
+        draft = issues.read_draft(body)
+        issues.comment(number, f"**[Open the current draft in LinkedIn]({issues.compose_url(draft)})**"
+                               "\n\nType @ before the names to tag people, then post. Comment "
+                               "`/posted <link to the post>` here afterwards.")
+        issues.react(c["id"], "+1")
+
+    elif word == "/posted":
+        body = gh("GET", f"/repos/{repo()}/issues/{number}")["body"] or ""
+        meta = issues.read_meta(body)
+        draft = issues.read_draft(body) if issues.START in body else ""
+        link = re.search(r"https://\S*linkedin\.com/\S+", rest)
+        posts = load("posts.json", [])
+        posts.append({"date": dt.date.today().isoformat(),
+                      "url": link.group(0) if link else None,
+                      "kind": meta.get("kind"), "ref": meta.get("ref"),
+                      "first_line": draft.splitlines()[0][:160] if draft else issue["title"]})
+        save("posts.json", posts[-200:])
+        gh("PATCH", f"/repos/{repo()}/issues/{number}",
+           {"state": "closed", "labels": sorted((labels - {"linkedin-draft", "panel-split"})
+                                                | {"linkedin-posted"})})
+        issues.react(c["id"], "rocket")
+
     elif word == "/linkedin":
         missing = tokenstore.renewal_ready()
         if missing:

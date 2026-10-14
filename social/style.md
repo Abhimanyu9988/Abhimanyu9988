@@ -24,6 +24,8 @@ The AI panel follows this file exactly. Edit it any time; changes apply from the
 - When it fits, end with an invitation that starts a conversation: an offer to help, a
   question, or encouragement for others to try. Not on every post.
 - Short paragraphs, one idea each. "•" bullets for lists of work.
+- Lists of work include only merged or finished work. Leave out pull requests that are
+  still in review, unless the whole post is about that one proposal.
 - One emoji is fine when it fits. None is fine too.
 - No corporate or hype words ("thrilled", "game-changer", "leverage", "journey", "deep dive").
 - 120 to 250 words for one piece of news; a weekly roundup can run to 300.

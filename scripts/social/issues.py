@@ -16,6 +16,23 @@ VERDICT_TEXT = {
 }
 
 
+OPEN_RE = re.compile(r"\n?<!-- OPEN:START -->.*?<!-- OPEN:END -->\n?", re.S)
+
+
+def compose_url(text):
+    """LinkedIn's (undocumented but widely used) link that opens the post composer
+    with the text filled in, so you can add @tags and post it yourself."""
+    import urllib.parse
+    return "https://www.linkedin.com/feed/?shareActive=true&text=" + urllib.parse.quote(text)
+
+
+def open_line(text):
+    return ("<!-- OPEN:START -->\n**Want to @tag people?** [Open this draft in LinkedIn]"
+            f"({compose_url(text)}), type @ before the names, and post it there. Then comment "
+            "`/posted <link to the post>` here so the panel knows. If you edit the box above "
+            "first, comment `/open` for a fresh link.\n<!-- OPEN:END -->")
+
+
 def _fence(text):
     ticks = "````" if "```" in text else "```"
     return f"{ticks}text\n{text}\n{ticks}"
@@ -64,7 +81,7 @@ def render(event, decision):
                  "latest one you attached.\n"
                  "Other commands: `/redraft make it warmer` · `/roundup` (save for Friday's "
                  "roundup) · `/post noimage` · close this issue to drop it.\n")
-    parts += [START, _fence(decision["draft"]), END, ""]
+    parts += [START, _fence(decision["draft"]), END, open_line(decision["draft"]), ""]
     if decision.get("alternative"):
         who = decision.get("alt_by") or "other editor"
         parts += [f"<details><summary>Alternative draft ({who})</summary>\n",
@@ -92,11 +109,13 @@ def replace_draft(body, new_draft, alternative=None, alt_by=None):
     head, rest = body.split(START, 1)
     _, tail = rest.split(END, 1)
     tail = re.sub(r"<details><summary>Alternative draft.*?</details>\n?", "", tail, flags=re.S)
+    tail = OPEN_RE.sub("\n", tail)
     alt = ""
     if alternative:
         alt = (f"\n<details><summary>Alternative draft ({alt_by or 'other editor'})</summary>\n\n"
                f"{_fence(alternative)}\n</details>\n")
-    return head + START + "\n" + _fence(new_draft) + "\n" + END + "\n" + alt + tail
+    return (head + START + "\n" + _fence(new_draft) + "\n" + END + "\n" + open_line(new_draft)
+            + "\n" + alt + tail)
 
 
 def read_meta(body):
