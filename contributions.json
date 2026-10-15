@@ -2,6 +2,30 @@
   "records": [
     {
       "component": "area:k8s",
+      "date": "2026-10-14",
+      "number": 4158,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/pull/4158",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Add Pod level memory limit and request metrics",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4158#issuecomment-6171363052"
+    },
+    {
+      "component": "area:k8s",
+      "date": "2026-10-14",
+      "number": 4074,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4074",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "Add k8s owner spec",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072"
+    },
+    {
+      "component": "area:k8s",
       "date": "2026-10-13",
       "number": 4158,
       "on": "pr",
@@ -576,6 +600,32 @@
       "type": "paper",
       "url": "https://doi.org/10.1109/iecct68664.2026.11541572",
       "venue": "2026 International Conference on Recent Advancement in Electrical, Computer and Communication Technologies (IECCT)"
+    },
+    {
+      "component": "general",
+      "date": "2026-01-01",
+      "date_label": "2026",
+      "number": 0,
+      "org": "Clarivate PLC",
+      "repo": "",
+      "role": "reviewer",
+      "title": "Peer review for IEEE Access",
+      "type": "peer_review",
+      "url": "https://publons.com/wos-op/review/author/cmdDS86h/",
+      "venue": "IEEE Access"
+    },
+    {
+      "component": "general",
+      "date": "2026-01-01",
+      "date_label": "2026",
+      "number": 0,
+      "org": "Clarivate PLC",
+      "repo": "",
+      "role": "reviewer",
+      "title": "Peer review for IEEE Access",
+      "type": "peer_review",
+      "url": "https://publons.com/wos-op/review/author/QIzSpP0A/",
+      "venue": "IEEE Access"
     },
     {
       "component": "general",

@@ -18,11 +18,11 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 18 comments on others' issues and PRs · 4 issues opened
+**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 19 comments on others' issues and PRs · 4 issues opened
 
 Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
-1 publication · 1 peer review for Discover Computing
+1 publication · 3 peer reviews for Discover Computing and IEEE Access
 
 [LinkedIn](https://www.linkedin.com/in/theabhibajaj/) · [ORCID](https://orcid.org/0009-0005-1179-009X)
 
@@ -47,11 +47,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-14 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) · semantic-conventions
 - 2026-10-13 · Issue · closed · [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) · community
 - 2026-10-12 · Issue · open · [#416 OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) · sig-end-user
 - 2026-10-12 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) · semantic-conventions
 - 2026-10-12 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474) · opentelemetry-collector-contrib
-- 2026-10-12 · Comment · [#50600 [internal/k8sinventory] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600#issuecomment-6129013323) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -59,6 +59,7 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### Peer review
 
+- **IEEE Access** · 2 reviews (2026)
 - **Discover Computing** · 1 review (2026)
 
 <details>
@@ -174,10 +175,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/semantic-conventions
 
 <details>
-<summary><b>area:k8s</b> · 2 PRs · 1 comment</summary>
+<summary><b>area:k8s</b> · 2 PRs · 2 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-14 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) |
 | 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |
 | 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
 | 2026-10-01 | PR · open | [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
