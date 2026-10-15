@@ -279,9 +279,9 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
 | opentelemetry-helm-charts | [\[operator\] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866) | commented |
 | community | [REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) | opened |
-| semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
 | opentelemetry-collector-contrib | [Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370) | commented |
 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927) | commented |
 | opentelemetry-collector-contrib | [\[internal/k8sinventory\] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600) | commented |
