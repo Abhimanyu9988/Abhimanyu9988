@@ -269,12 +269,13 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**0** merged PRs · **2** open PRs · **0** PRs reviewed · **4** issues opened · **7** repositories
+**0** merged PRs · **3** open PRs · **0** PRs reviewed · **5** issues opened · **7** repositories
 
 #### In review
 
 | Opened | Repository | Pull request |
 |---|---|---|
+| 2026-10-15 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
 | 2026-10-12 | sig-end-user | [OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) |
 | 2024-02-29 | opentelemetry-network | [Kernel collector issue on ROSA OpenShift(4.14.12) Redhat host](https://github.com/open-telemetry/opentelemetry-network/issues/254) |
 
@@ -282,6 +283,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
 | opentelemetry-helm-charts | [\[operator\] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866) | commented |
 | community | [REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) | opened |
@@ -291,9 +293,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-collector-contrib | [\[processor/k8sattributes\] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878) | commented |
 | sig-end-user | [OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) | opened |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892) | commented |
-| opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
 
-[…and 6 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 7 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 

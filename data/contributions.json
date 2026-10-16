@@ -2,6 +2,13 @@
   "merged": [],
   "open": [
     {
+      "date": "2026-10-15",
+      "number": 2468,
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "[kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468"
+    },
+    {
       "date": "2026-10-12",
       "number": 416,
       "repo": "open-telemetry/sig-end-user",
