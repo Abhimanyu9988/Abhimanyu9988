@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 19 comments on others' issues and PRs · 4 issues opened
+**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 21 comments on others' issues and PRs · 5 issues opened
 
 Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -47,11 +47,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-15 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) · semantic-conventions
+- 2026-10-15 · Issue · open · [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) · opentelemetry-helm-charts
+- 2026-10-15 · Comment on PR · [#52059 [receiver/sqlserver]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059#issuecomment-6188639462) · opentelemetry-collector-contrib
 - 2026-10-14 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) · semantic-conventions
 - 2026-10-13 · Issue · closed · [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) · community
-- 2026-10-12 · Issue · open · [#416 OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) · sig-end-user
-- 2026-10-12 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) · semantic-conventions
-- 2026-10-12 · Comment · [#51878 [processor/k8sattributes] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878#issuecomment-6122635474) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -70,10 +70,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector-contrib
 
 <details>
-<summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 5 comments</summary>
+<summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 6 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-15 | Comment on PR | [#52059 [receiver/sqlserver]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059#issuecomment-6188639462) |
 | 2026-10-11 | Comment on PR | [#50135 [receiver/sqlserver] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062) |
 | 2026-09-29 | Comment | [#49370 Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370#issuecomment-5888446619) |
 | 2026-09-21 | Review · approved (2 rounds) | [#51231 [receiver/sqlserver] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269889722) |
@@ -175,10 +176,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/semantic-conventions
 
 <details>
-<summary><b>area:k8s</b> · 2 PRs · 2 comments</summary>
+<summary><b>area:k8s</b> · 2 PRs · 3 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-15 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) |
 | 2026-10-14 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) |
 | 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |
 | 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
@@ -208,10 +210,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-helm-charts
 
 <details>
-<summary><b>chart:operator</b> · 2 comments</summary>
+<summary><b>chart:operator</b> · 2 comments · 1 issue</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-15 | Issue · open | [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
 | 2026-10-05 | Comment | [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) |
 | 2026-09-28 | Comment | [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5869485416) |
 
