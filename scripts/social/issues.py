@@ -16,6 +16,33 @@ VERDICT_TEXT = {
 }
 
 
+# Text outside the draft box is rendered by GitHub. An @handle there notifies that person, and an
+# owner/repo#123 or a github.com issue link puts a "mentioned this" note on the upstream issue or
+# PR, telling its maintainers about a LinkedIn draft. quiet() breaks both up; code spans and the
+# fenced draft are left exactly as they are, so commands like `/draft <link>` still work.
+CODE_RE = re.compile(r"(`+)(.+?)\1", re.S)
+REF_RE = re.compile(r"(?<![\w&])((?:[\w.-]+(?:/[\w.-]+)?)?#)(\d+)")
+MENTION_RE = re.compile(r"(?<![\w`])@(?=[A-Za-z0-9])")
+ZWSP = "\u200b"
+
+
+def _quiet_plain(text):
+    text = text.replace("https://github.com/", "https://redirect.github.com/")
+    text = REF_RE.sub(lambda m: m.group(1) + ZWSP + m.group(2), text)
+    return MENTION_RE.sub("@" + ZWSP, text)
+
+
+def quiet(text):
+    """`text` for an issue or comment, pinging nobody and linking to no upstream thread."""
+    text = text or ""
+    out, last = [], 0
+    for m in CODE_RE.finditer(text):
+        out += [_quiet_plain(text[last:m.start()]), m.group(0)]
+        last = m.end()
+    out.append(_quiet_plain(text[last:]))
+    return "".join(out)
+
+
 OPEN_RE = re.compile(r"\n?<!-- OPEN:START -->.*?<!-- OPEN:END -->\n?", re.S)
 
 
@@ -52,12 +79,12 @@ def _discussion(transcript):
         rnd = t["round"]
         rnd = f"round {rnd}" if isinstance(rnd, int) else rnd
         if t.get("error"):
-            lines.append(f"- **{t['who']}, {rnd}:** failed ({t['error']})")
+            lines.append(f"- **{t['who']}, {rnd}:** failed ({quiet(str(t['error']))})")
             continue
         head = t.get("verdict", "")
         if t.get("score") is not None:
             head += f" ({t['score']}/10)"
-        reason = (t.get("reason") or "").replace("\n", " ")
+        reason = quiet((t.get("reason") or "").replace("\n", " "))
         lines.append(f"- **{t['who']}, {rnd}:** {head}. {reason}".replace(":** .", ":**"))
     return "\n".join(lines)
 
@@ -74,7 +101,7 @@ def render(event, decision):
         parts.append("\nThe editors disagreed and there was no tiebreaker. Read the "
                      "discussion below, then post it or close this issue.")
     if decision.get("note"):
-        parts.append(decision["note"])
+        parts.append(quiet(decision["note"]))
     parts.append("\n**To publish:** edit the text in the box if you like, then comment "
                  "`/post`. It goes out right away as a public post from your own profile.\n"
                  "**Picture (optional):** attach one in a comment first; `/post` includes the "
@@ -90,7 +117,7 @@ def render(event, decision):
         parts += ["<details><summary>Panel discussion</summary>\n",
                   _discussion(decision["transcript"]), "</details>\n"]
     if event.get("ref"):
-        parts.append(f"Source: {event['ref']}")
+        parts.append(f"Source: {quiet(event['ref'])}")
     if decision.get("cost"):
         parts.append(f"<sub>{decision['cost']}</sub>")
     return "\n".join(parts)
@@ -125,7 +152,7 @@ def read_meta(body):
 
 def create_draft_issue(event, decision):
     labels = ["linkedin-draft"] + (["panel-split"] if decision["verdict"] == "split" else [])
-    title = f"LinkedIn draft: {event['title']}"[:240]
+    title = quiet(f"LinkedIn draft: {event['title']}")[:240]
     issue = gh("POST", f"/repos/{repo()}/issues", {
         "title": title, "body": render(event, decision),
         "labels": labels, "assignees": [owner()]})
@@ -148,8 +175,8 @@ def panel_log_issue():
 
 def log_decision(event, decision):
     verdict = decision["verdict"]
-    text = (f"**{VERDICT_TEXT.get(verdict, verdict).capitalize()}:** {event['title']}"
-            + (f"\n{event['ref']}" if event.get("ref") else "")
+    text = (f"**{VERDICT_TEXT.get(verdict, verdict).capitalize()}:** {quiet(event['title'])}"
+            + (f"\n{quiet(event['ref'])}" if event.get("ref") else "")
             + f"\n\n{_discussion(decision['transcript'])}")
     if decision.get("cost"):
         text += f"\n\n<sub>{decision['cost']}</sub>"
@@ -160,7 +187,7 @@ def log_decision(event, decision):
 
 
 def comment(number, text):
-    gh("POST", f"/repos/{repo()}/issues/{number}/comments", {"body": text})
+    gh("POST", f"/repos/{repo()}/issues/{number}/comments", {"body": quiet(text)})
 
 
 def react(comment_id, content):
