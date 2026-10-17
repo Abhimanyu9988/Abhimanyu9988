@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**3 merged PRs** · 4 in review · 3 closed · **5 PRs reviewed** · 21 comments on others' issues and PRs · 5 issues opened
+**3 merged PRs** · 5 in review · 3 closed · **5 PRs reviewed** · 23 comments on others' issues and PRs · 5 issues opened
 
 Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -34,6 +34,7 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### In review
 
+- **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · semantic-conventions · opened 2026-10-16
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
 - **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · semantic-conventions · opened 2026-10-07
@@ -47,11 +48,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-16 · Comment on PR · [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) · opentelemetry-collector-contrib
+- 2026-10-16 · Comment · [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) · opentelemetry-collector-contrib
 - 2026-10-15 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) · semantic-conventions
 - 2026-10-15 · Issue · open · [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) · opentelemetry-helm-charts
 - 2026-10-15 · Comment on PR · [#52059 [receiver/sqlserver]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059#issuecomment-6188639462) · opentelemetry-collector-contrib
-- 2026-10-14 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) · semantic-conventions
-- 2026-10-13 · Issue · closed · [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) · community
 
 ### Publications
 
@@ -99,6 +100,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>receiver/k8scluster</b> · 1 PR reviewed · 2 comments</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-16 | Comment on PR | [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) |
+| 2026-10-08 | Review · approved | [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) |
+| 2026-10-07 | Comment | [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) |
+
+</details>
+
+<details>
 <summary><b>processor/k8sattributes</b> · 2 comments</summary>
 
 | Date | Type | Item |
@@ -119,21 +131,20 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>receiver/k8scluster</b> · 1 PR reviewed · 1 comment</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-08 | Review · approved | [#51874 [chore][receiver/k8scluster] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874#pullrequestreview-5456235100) |
-| 2026-10-07 | Comment | [#51856 [receiver/k8scluster] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856#issuecomment-6038319668) |
-
-</details>
-
-<details>
 <summary><b>exporter/elasticsearch</b> · 1 PR reviewed</summary>
 
 | Date | Type | Item |
 |---|---|---|
 | 2026-10-10 | Review · comments | [#50781 [chore] [exporter/elasticsearch] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781#pullrequestreview-5480930021) |
+
+</details>
+
+<details>
+<summary><b>exporter/splunkhec</b> · 1 comment</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-16 | Comment | [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) |
 
 </details>
 
@@ -176,10 +187,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/semantic-conventions
 
 <details>
-<summary><b>area:k8s</b> · 2 PRs · 3 comments</summary>
+<summary><b>area:k8s</b> · 3 PRs · 3 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-16 | PR · open | [#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
 | 2026-10-15 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) |
 | 2026-10-14 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) |
 | 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |

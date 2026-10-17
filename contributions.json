@@ -2,6 +2,52 @@
   "records": [
     {
       "component": "area:k8s",
+      "date": "2026-10-16",
+      "number": 4219,
+      "repo": "open-telemetry/semantic-conventions",
+      "state": "open",
+      "title": "[k8s] Add Pod and container memory limit and request utilization metrics",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4219"
+    },
+    {
+      "component": "chart:operator",
+      "date": "2026-10-16",
+      "number": 2468,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "[kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468#issuecomment-6214801575"
+    },
+    {
+      "component": "receiver/k8scluster",
+      "date": "2026-10-16",
+      "number": 50180,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885"
+    },
+    {
+      "component": "exporter/splunkhec",
+      "date": "2026-10-16",
+      "number": 52111,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with \"Invalid data channel\" / \"Data channel is missing\"",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739"
+    },
+    {
+      "component": "area:k8s",
       "date": "2026-10-15",
       "number": 4074,
       "on": "issue",
