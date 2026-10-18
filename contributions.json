@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-17",
+      "number": 2473,
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "state": "open",
+      "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473"
+    },
+    {
+      "author": "szelese",
+      "component": "general",
+      "date": "2026-10-17",
+      "number": 2470,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "review_state": "approved",
+      "title": "feat(kube-stack): support additional instrumentation fields",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-17",
+      "number": 2161,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "[Operator] Cert invalid after cluster restart",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702"
+    },
+    {
       "component": "area:k8s",
       "date": "2026-10-16",
       "number": 4219,
@@ -543,6 +577,18 @@
       "title": "[receiver/sqlserver] Fix direct-connection rate metrics emitting cumulative values",
       "type": "review",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231#pullrequestreview-5269375009"
+    },
+    {
+      "component": "receiver/sqlserver",
+      "date": "2026-09-21",
+      "number": 51150,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51150",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/sqlserver] Fix duplicate xmlns declarations in obfuscated query plans",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51150#issuecomment-5763925898"
     },
     {
       "author": "SrikarChittemsetty",

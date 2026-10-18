@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**3 merged PRs** · 5 in review · 3 closed · **5 PRs reviewed** · 23 comments on others' issues and PRs · 5 issues opened
+**3 merged PRs** · 6 in review · 3 closed · **6 PRs reviewed** · 24 comments on others' issues and PRs · 5 issues opened
 
 Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -34,6 +34,7 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### In review
 
+- **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · opentelemetry-helm-charts · opened 2026-10-17
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · semantic-conventions · opened 2026-10-16
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
@@ -48,11 +49,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### Recent activity
 
+- 2026-10-17 · Review · approved · [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) · opentelemetry-helm-charts
+- 2026-10-17 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) · opentelemetry-helm-charts
 - 2026-10-16 · Comment on PR · [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) · opentelemetry-collector-contrib
 - 2026-10-16 · Comment · [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) · opentelemetry-collector-contrib
 - 2026-10-15 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) · semantic-conventions
-- 2026-10-15 · Issue · open · [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) · opentelemetry-helm-charts
-- 2026-10-15 · Comment on PR · [#52059 [receiver/sqlserver]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059#issuecomment-6188639462) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -242,10 +243,13 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>general</b> · 1 PR</summary>
+<summary><b>general</b> · 2 PRs · 1 PR reviewed · 1 comment</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-17 | PR · open | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
+| 2026-10-17 | Review · approved | [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) |
+| 2026-10-17 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) |
 | 2026-10-08 | PR · merged 2026-10-13 | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
 
 </details>
