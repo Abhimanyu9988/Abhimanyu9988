@@ -299,6 +299,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
+| opentelemetry-helm-charts | [\[Operator\] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161) | commented |
 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | opentelemetry-collector-contrib | [\[exporter/splunkhec\] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
@@ -307,10 +309,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-collector-contrib | [Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370) | commented |
 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927) | commented |
 | opentelemetry-collector-contrib | [\[internal/k8sinventory\] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600) | commented |
-| opentelemetry-collector-contrib | [\[processor/k8sattributes\] Enrich peer (client/server) IPs with cluster-wide Kubernetes metadata, backed by a shared metadata cache](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51878) | commented |
-| sig-end-user | [OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) | opened |
 
-[…and 8 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 9 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
