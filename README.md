@@ -299,8 +299,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
-| opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
 | opentelemetry-helm-charts | [\[Operator\] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161) | commented |
+| opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | opentelemetry-collector-contrib | [\[exporter/splunkhec\] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
