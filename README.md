@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 
 **3 merged PRs** · 6 in review · 3 closed · **6 PRs reviewed** · 24 comments on others' issues and PRs · 5 issues opened
 
-Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
+Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
 1 publication · 3 peer reviews for Discover Computing and IEEE Access
 
@@ -34,7 +34,7 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `exporter/
 
 ### In review
 
-- **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · opentelemetry-helm-charts · opened 2026-10-17
+- **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · opentelemetry-helm-charts · opened 2026-10-17
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · semantic-conventions · opened 2026-10-16
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
@@ -223,10 +223,12 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-helm-charts
 
 <details>
-<summary><b>chart:operator</b> · 2 comments · 1 issue</summary>
+<summary><b>chart:operator</b> · 1 PR · 3 comments · 1 issue</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-17 | PR · open | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
+| 2026-10-17 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) |
 | 2026-10-15 | Issue · open | [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
 | 2026-10-05 | Comment | [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) |
 | 2026-09-28 | Comment | [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5869485416) |
@@ -243,13 +245,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>general</b> · 2 PRs · 1 PR reviewed · 1 comment</summary>
+<summary><b>general</b> · 1 PR · 1 PR reviewed</summary>
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-17 | PR · open | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
 | 2026-10-17 | Review · approved | [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) |
-| 2026-10-17 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) |
 | 2026-10-08 | PR · merged 2026-10-13 | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
 
 </details>

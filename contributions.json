@@ -1,7 +1,7 @@
 {
   "records": [
     {
-      "component": "general",
+      "component": "chart:operator",
       "date": "2026-10-17",
       "number": 2473,
       "repo": "open-telemetry/opentelemetry-helm-charts",
@@ -23,7 +23,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212"
     },
     {
-      "component": "general",
+      "component": "chart:operator",
       "date": "2026-10-17",
       "number": 2161,
       "on": "issue",
