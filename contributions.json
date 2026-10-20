@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-19",
+      "number": 52019,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019#issuecomment-6273311234"
+    },
+    {
       "component": "chart:operator",
       "date": "2026-10-17",
       "number": 2473,
