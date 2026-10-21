@@ -1,28 +1,6 @@
 {
   "merged": [],
-  "open": [
-    {
-      "date": "2026-10-15",
-      "number": 2468,
-      "repo": "open-telemetry/opentelemetry-helm-charts",
-      "title": "[kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)",
-      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468"
-    },
-    {
-      "date": "2026-10-12",
-      "number": 416,
-      "repo": "open-telemetry/sig-end-user",
-      "title": "OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters",
-      "url": "https://github.com/open-telemetry/sig-end-user/issues/416"
-    },
-    {
-      "date": "2024-02-29",
-      "number": 254,
-      "repo": "open-telemetry/opentelemetry-network",
-      "title": "Kernel collector issue on ROSA OpenShift(4.14.12) Redhat host",
-      "url": "https://github.com/open-telemetry/opentelemetry-network/issues/254"
-    }
-  ],
+  "open": [],
   "orgs": [
     "open-telemetry"
   ],

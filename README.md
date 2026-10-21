@@ -286,15 +286,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**0** merged PRs · **3** open PRs · **0** PRs reviewed · **5** issues opened · **7** repositories
-
-#### In review
-
-| Opened | Repository | Pull request |
-|---|---|---|
-| 2026-10-15 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
-| 2026-10-12 | sig-end-user | [OTel in Practice: Kubernetes Memory Metrics: Why Working Set Matters](https://github.com/open-telemetry/sig-end-user/issues/416) |
-| 2024-02-29 | opentelemetry-network | [Kernel collector issue on ROSA OpenShift(4.14.12) Redhat host](https://github.com/open-telemetry/opentelemetry-network/issues/254) |
+**0** merged PRs · **0** open PRs · **0** PRs reviewed · **5** issues opened · **7** repositories
 
 #### Issues and discussions
 
