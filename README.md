@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**3 merged PRs** · 6 in review · 3 closed · **6 PRs reviewed** · 24 comments on others' issues and PRs · 5 issues opened
+**6 merged PRs** · 3 in review · 3 closed · **6 PRs reviewed** · 25 comments on others' issues and PRs · 5 issues opened
 
 Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
 
@@ -28,18 +28,18 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### Merged
 
+- **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark and dashpole · +246 −0 in 4 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
 - **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · merged 2026-10-13 by TylerHelmuth · +77 −58 in 39 files · fixes [#1866](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866)
+- **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark, braydonk, dashpole and kamphaus · +41 −6 in 5 files
+- **[#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark, TylerHelmuth and dashpole · +205 −0 in 3 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
 - **[#51657 [chore][internal/k8sinventory] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657)** · `internal/k8sinventory` · merged 2026-10-06 by TylerHelmuth · +29 −2 in 1 file · fixes [#50433](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50433)
 - **[#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138)** · `receiver/sqlserver` · merged 2026-09-21 by songy23 · approved by ebrdarSplunk and paulojmdias · +42 −0 in 1 file · fixes [#50774](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774)
 
 ### In review
 
 - **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · opentelemetry-helm-charts · opened 2026-10-17
-- **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · semantic-conventions · opened 2026-10-16
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
-- **[#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184)** · `area:k8s` · semantic-conventions · opened 2026-10-07
-- **[#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158)** · `area:k8s` · semantic-conventions · opened 2026-10-01
 
 ### Closed without merging
 
@@ -49,11 +49,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-10-20 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855) · semantic-conventions
 - 2026-10-17 · Review · approved · [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) · opentelemetry-helm-charts
 - 2026-10-17 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) · opentelemetry-helm-charts
 - 2026-10-16 · Comment on PR · [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) · opentelemetry-collector-contrib
 - 2026-10-16 · Comment · [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) · opentelemetry-collector-contrib
-- 2026-10-15 · Comment · [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) · semantic-conventions
 
 ### Publications
 
@@ -188,16 +188,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/semantic-conventions
 
 <details>
-<summary><b>area:k8s</b> · 3 PRs · 3 comments</summary>
+<summary><b>area:k8s</b> · 3 PRs · 4 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-16 | PR · open | [#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
+| 2026-10-20 | Comment | [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855) |
+| 2026-10-16 | PR · merged 2026-10-20 | [#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
 | 2026-10-15 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) |
 | 2026-10-14 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072) |
 | 2026-10-12 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339) |
-| 2026-10-07 | PR · open | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
-| 2026-10-01 | PR · open | [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
+| 2026-10-07 | PR · merged 2026-10-20 | [#4184 [k8s] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
+| 2026-10-01 | PR · merged 2026-10-20 | [#4158 [k8s] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
 
 </details>
 
