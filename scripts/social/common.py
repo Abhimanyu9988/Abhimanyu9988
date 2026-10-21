@@ -107,12 +107,25 @@ def gh(method, path, body=None, params=None):
     raise SystemExit("GitHub kept rate-limiting")
 
 
-def gh_search(query, limit=100):
+def _search_once(query, limit):
     data = gh("GET", "/search/issues",
               params={"q": query, "sort": "updated", "order": "desc",
                       "per_page": min(limit, 100)})
     time.sleep(float(os.environ.get("SEARCH_PAUSE", "2.5")))
     return (data or {}).get("items", [])
+
+
+def gh_search(query, limit=100):
+    """Issue/PR search. GitHub has been answering `is:pr` queries with issues only (so merged PRs
+    went missing). If the answer has items of the wrong type, ask again without the type
+    qualifier and keep only the right type."""
+    terms = query.split()
+    want = "pr" if "is:pr" in terms else "issue" if "is:issue" in terms else None
+    items = _search_once(query, limit)
+    if want and any(("pull_request" in i) != (want == "pr") for i in items):
+        loose = " ".join(t for t in terms if t not in ("is:pr", "is:issue"))
+        items = [i for i in _search_once(loose, limit) if ("pull_request" in i) == (want == "pr")]
+    return items
 
 
 def repo():
