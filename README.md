@@ -286,7 +286,37 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**0** merged PRs · **0** open PRs · **0** PRs reviewed · **5** issues opened · **7** repositories
+**6** merged PRs · **3** open PRs · **6** PRs reviewed · **5** issues opened · **7** repositories
+
+#### Merged pull requests
+
+| Merged | Repository | Pull request |
+|---|---|---|
+| 2026-10-20 | semantic-conventions | [\[k8s\] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
+| 2026-10-20 | semantic-conventions | [\[k8s\] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
+| 2026-10-20 | semantic-conventions | [\[k8s\] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
+| 2026-10-13 | opentelemetry-helm-charts | [fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
+| 2026-10-06 | opentelemetry-collector-contrib | [\[chore\]\[internal/k8sinventory\] Fix flaky cache sync tests](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51657) |
+| 2026-09-21 | opentelemetry-collector-contrib | [\[chore\] \[receiver/sqlserver\] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138) |
+
+#### In review
+
+| Opened | Repository | Pull request |
+|---|---|---|
+| 2026-10-17 | opentelemetry-helm-charts | [docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
+| 2026-10-13 | opentelemetry-collector-contrib | [\[chore\]\[receiver/flinkmetrics\] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
+| 2026-10-10 | opentelemetry-collector-contrib | [\[chore\]\[processor/probabilisticsampler\] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
+
+#### Code reviews
+
+| Reviewed | Repository | Pull request |
+|---|---|---|
+| 2026-10-21 | opentelemetry-helm-charts | [feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470) |
+| 2026-10-10 | opentelemetry-collector-contrib | [\[chore\] \[exporter/elasticsearch\] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781) |
+| 2026-10-09 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638) |
+| 2026-10-08 | opentelemetry-collector-contrib | [\[chore\]\[receiver/k8scluster\] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874) |
+| 2026-09-21 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231) |
+| 2026-09-21 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135) |
 
 #### Issues and discussions
 
@@ -295,15 +325,15 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | semantic-conventions | [\[k8s\] Define memory pod/container level limit and request metrics](https://github.com/open-telemetry/semantic-conventions/issues/4133) | commented |
 | opentelemetry-helm-charts | [\[Operator\] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161) | commented |
+| opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
+| opentelemetry-collector-contrib | [\[receiver/sqlserver\]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059) | commented |
 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | opentelemetry-collector-contrib | [\[exporter/splunkhec\] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
-| opentelemetry-helm-charts | [\[operator\] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866) | commented |
-| community | [REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) | opened |
-| opentelemetry-collector-contrib | [Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370) | commented |
+| opentelemetry-helm-charts | [fix(opentelemetry-collector): fail when both event presets are enabled](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2421) | commented |
 
-[…and 10 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 13 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
