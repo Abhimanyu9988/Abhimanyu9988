@@ -14,6 +14,7 @@ Standard library only. Configuration comes from environment variables:
 """
 
 import argparse
+import datetime as dt
 import json
 import os
 import sys
@@ -26,6 +27,7 @@ API = "https://api.github.com"
 START = "<!-- CONTRIB:START -->"
 END = "<!-- CONTRIB:END -->"
 SEARCH_PAUSE = 2.5  # search API allows 30 requests/minute with a token
+NEW_MERGE_DAYS = int(os.environ.get("NEW_MERGE_DAYS", "7"))  # merges older than this get no post
 
 
 def api_get(path, params=None):
@@ -64,7 +66,7 @@ def api_get(path, params=None):
     raise SystemExit(f"GitHub API kept rate-limiting {path}")
 
 
-def search(query, max_pages=3):
+def _search_pages(query, max_pages):
     items, page = [], 1
     while page <= max_pages:
         data = api_get("/search/issues", {
@@ -77,6 +79,19 @@ def search(query, max_pages=3):
         if len(batch) < 100 or len(items) >= data.get("total_count", 0):
             break
         page += 1
+    return items
+
+
+def search(query, max_pages=3):
+    """GitHub has been answering `is:pr` queries with issues only, which hid every merged PR.
+    If the answer mixes in the wrong type, ask again without the type qualifier and filter."""
+    terms = query.split()
+    want = "pr" if "is:pr" in terms else "issue" if "is:issue" in terms else None
+    items = _search_pages(query, max_pages)
+    if want and any(("pull_request" in i) != (want == "pr") for i in items):
+        loose = " ".join(t for t in terms if t not in ("is:pr", "is:issue"))
+        items = [i for i in _search_pages(loose, max_pages)
+                 if ("pull_request" in i) == (want == "pr")]
     return items
 
 
@@ -298,7 +313,11 @@ def main():
         new = []
         if previous is not None:
             known = {e["url"] for e in previous.get("merged", [])}
-            new = [e for e in data["merged"] if e["url"] not in known]
+            # Only recent merges get a post: the first run after a gap (or after a fix)
+            # must not open a draft for every PR from months ago.
+            recent = (dt.date.today() - dt.timedelta(days=NEW_MERGE_DAYS)).isoformat()
+            new = [e for e in data["merged"]
+                   if e["url"] not in known and e.get("date", "") >= recent]
         with open(args.new_merged_out, "w", encoding="utf-8") as fh:
             json.dump(new, fh, indent=2)
         print(f"{len(new)} newly merged PR(s)")
