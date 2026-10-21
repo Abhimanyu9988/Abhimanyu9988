@@ -300,6 +300,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | semantic-conventions | [\[k8s\] Define memory pod/container level limit and request metrics](https://github.com/open-telemetry/semantic-conventions/issues/4133) | commented |
 | opentelemetry-helm-charts | [\[Operator\] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161) | commented |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] migrate semconv from v1.9.0 and v1.18.0](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51856) | commented |
@@ -309,9 +310,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-helm-charts | [\[operator\] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866) | commented |
 | community | [REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) | opened |
 | opentelemetry-collector-contrib | [Database receivers force a single collection interval for all signals — no way to collect expensive/slow-changing signals less often](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49370) | commented |
-| opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927) | commented |
 
-[…and 9 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 10 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
