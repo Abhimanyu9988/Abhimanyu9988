@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "author": "szelese",
+      "component": "general",
+      "date": "2026-10-21",
+      "number": 2470,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "review_state": "commented",
+      "title": "feat(kube-stack): support additional instrumentation fields",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5598728293"
+    },
+    {
       "component": "area:k8s",
       "date": "2026-10-20",
       "number": 4219,

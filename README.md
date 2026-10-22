@@ -49,8 +49,8 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-10-21 · Review · approved (2 rounds) · [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5598728293) · opentelemetry-helm-charts
 - 2026-10-20 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855) · semantic-conventions
-- 2026-10-17 · Review · approved · [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) · opentelemetry-helm-charts
 - 2026-10-17 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) · opentelemetry-helm-charts
 - 2026-10-16 · Comment on PR · [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) · opentelemetry-collector-contrib
 - 2026-10-16 · Comment · [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) · opentelemetry-collector-contrib
@@ -250,7 +250,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-17 | Review · approved | [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5558718212) |
+| 2026-10-21 | Review · approved (2 rounds) | [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5598728293) |
 | 2026-10-08 | PR · merged 2026-10-13 | [#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456) |
 
 </details>
