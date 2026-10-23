@@ -1,6 +1,76 @@
 {
   "records": [
     {
+      "component": "area:k8s",
+      "date": "2026-10-22",
+      "number": 4156,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4156",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Promote k8s pod volume metrics to release candidate",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6344437106"
+    },
+    {
+      "component": "area:k8s",
+      "date": "2026-10-22",
+      "number": 4156,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4156",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "[k8s] Promote k8s pod volume metrics to release candidate",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6340031366"
+    },
+    {
+      "component": "area:server",
+      "date": "2026-10-22",
+      "number": 4026,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4026",
+      "repo": "open-telemetry/semantic-conventions",
+      "title": "Clarify server.address when a host agent connects to a local service via loopback",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-6345776172"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-22",
+      "number": 52279,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-22",
+      "number": 52240,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-22",
+      "number": 52198,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621"
+    },
+    {
       "author": "szelese",
       "component": "general",
       "date": "2026-10-21",

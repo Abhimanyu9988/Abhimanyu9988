@@ -18,9 +18,9 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**6 merged PRs** · 3 in review · 3 closed · **6 PRs reviewed** · 25 comments on others' issues and PRs · 5 issues opened
+**6 merged PRs** · 4 in review · 3 closed · **6 PRs reviewed** · 30 comments on others' issues and PRs · 5 issues opened
 
-Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/sqlserver`
+Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
 1 publication · 3 peer reviews for Discover Computing and IEEE Access
 
@@ -37,6 +37,7 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
+- **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
 - **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · opentelemetry-helm-charts · opened 2026-10-17
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-13
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
@@ -49,11 +50,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
-- 2026-10-21 · Review · approved (2 rounds) · [#2470 feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5598728293) · opentelemetry-helm-charts
-- 2026-10-20 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855) · semantic-conventions
-- 2026-10-17 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) · opentelemetry-helm-charts
-- 2026-10-16 · Comment on PR · [#50180 [receiver/k8scluster] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180#issuecomment-6216656885) · opentelemetry-collector-contrib
-- 2026-10-16 · Comment · [#52111 [exporter/splunkhec] Exporter never sends X-Splunk-Request-Channel header; HEC rejects events with "Invalid data channel" / "Data channel is missing"](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52111#issuecomment-6217401739) · opentelemetry-collector-contrib
+- 2026-10-22 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6344437106) · semantic-conventions
+- 2026-10-22 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6340031366) · semantic-conventions
+- 2026-10-22 · Comment · [#4026 Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-6345776172) · semantic-conventions
+- 2026-10-22 · Comment · [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359) · opentelemetry-collector-contrib
+- 2026-10-22 · Comment · [#52198 [receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -86,6 +87,18 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-09-17 | PR · merged 2026-09-21 | [#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138) |
 | 2026-09-17 | Comment | [#50111 [receiver/sqlserver] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111#issuecomment-5717114483) |
 | 2026-09-14 | Comment | [#50774 [receiver/sqlserver] TLS handshake fails on Windows Server 2012 R2 hosts; encrypt=disable is the workaround (diagnosis for #44058)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5668652073) |
+
+</details>
+
+<details>
+<summary><b>receiver/kubeletstats</b> · 1 PR · 3 comments</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-22 | PR · open | [#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
+| 2026-10-22 | Comment | [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359) |
+| 2026-10-22 | Comment | [#52198 [receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621) |
+| 2026-10-12 | Comment | [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) |
 
 </details>
 
@@ -176,22 +189,15 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 </details>
 
-<details>
-<summary><b>receiver/kubeletstats</b> · 1 comment</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-12 | Comment | [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) |
-
-</details>
-
 #### open-telemetry/semantic-conventions
 
 <details>
-<summary><b>area:k8s</b> · 3 PRs · 4 comments</summary>
+<summary><b>area:k8s</b> · 3 PRs · 6 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-22 | Comment | [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6344437106) |
+| 2026-10-22 | Comment | [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6340031366) |
 | 2026-10-20 | Comment | [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855) |
 | 2026-10-16 | PR · merged 2026-10-20 | [#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
 | 2026-10-15 | Comment | [#4074 Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920) |
@@ -203,10 +209,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>area:server</b> · 2 comments</summary>
+<summary><b>area:server</b> · 3 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-22 | Comment | [#4026 Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-6345776172) |
 | 2026-09-30 | Comment | [#4026 Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-5919660034) |
 | 2026-09-28 | Comment | [#4026 Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-5869017925) |
 
