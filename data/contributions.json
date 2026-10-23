@@ -45,6 +45,13 @@
   ],
   "open": [
     {
+      "date": "2026-10-22",
+      "number": 52279,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
+    },
+    {
       "date": "2026-10-17",
       "number": 2473,
       "repo": "open-telemetry/opentelemetry-helm-charts",
