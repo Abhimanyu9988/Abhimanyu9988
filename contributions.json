@@ -1,6 +1,52 @@
 {
   "records": [
     {
+      "component": "chart:operator",
+      "date": "2026-10-24",
+      "number": 2473,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473#issuecomment-6383985171"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-24",
+      "number": 16228,
+      "repo": "open-telemetry/opentelemetry-collector",
+      "state": "open",
+      "title": "[scraperhelper] scraped_metric_points counts metrics instead of data points",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector/issues/16228"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-24",
+      "number": 52265,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "Promote `kubeletstats` Receiver to Stable - Community Support",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265#issuecomment-6384093069"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-24",
+      "number": 52264,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "Promote `kubeletstats` Receiver to Stable - Observability",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264#issuecomment-6384644831"
+    },
+    {
       "component": "area:k8s",
       "date": "2026-10-22",
       "number": 4156,
@@ -35,6 +81,18 @@
       "title": "Clarify server.address when a host agent connects to a local service via loopback",
       "type": "comment",
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-6345776172"
+    },
+    {
+      "component": "chart:operator",
+      "date": "2026-10-22",
+      "number": 2473,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473#issuecomment-6345642868"
     },
     {
       "component": "receiver/kubeletstats",

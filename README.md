@@ -18,9 +18,9 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**6 merged PRs** · 4 in review · 3 closed · **6 PRs reviewed** · 30 comments on others' issues and PRs · 5 issues opened
+**6 merged PRs** · 4 in review · 3 closed · **6 PRs reviewed** · 32 comments on others' issues and PRs · 6 issues opened
 
-Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
+Active since Feb 2024 across 8 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
 1 publication · 3 peer reviews for Discover Computing and IEEE Access
 
@@ -50,11 +50,11 @@ Active since Feb 2024 across 7 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-10-24 · Issue · open · [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) · opentelemetry-collector
+- 2026-10-24 · Comment · [#52265 Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265#issuecomment-6384093069) · opentelemetry-collector-contrib
+- 2026-10-24 · Comment · [#52264 Promote `kubeletstats` Receiver to Stable - Observability](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264#issuecomment-6384644831) · opentelemetry-collector-contrib
 - 2026-10-22 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6344437106) · semantic-conventions
 - 2026-10-22 · Comment · [#4156 [k8s] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6340031366) · semantic-conventions
-- 2026-10-22 · Comment · [#4026 Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026#issuecomment-6345776172) · semantic-conventions
-- 2026-10-22 · Comment · [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359) · opentelemetry-collector-contrib
-- 2026-10-22 · Comment · [#52198 [receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -91,10 +91,12 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>receiver/kubeletstats</b> · 1 PR · 3 comments</summary>
+<summary><b>receiver/kubeletstats</b> · 1 PR · 5 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-24 | Comment | [#52265 Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265#issuecomment-6384093069) |
+| 2026-10-24 | Comment | [#52264 Promote `kubeletstats` Receiver to Stable - Observability](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264#issuecomment-6384644831) |
 | 2026-10-22 | PR · open | [#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
 | 2026-10-22 | Comment | [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359) |
 | 2026-10-22 | Comment | [#52198 [receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621) |
@@ -270,6 +272,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 | Date | Type | Item |
 |---|---|---|
 | 2026-10-13 | Issue · closed | [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) |
+
+</details>
+
+#### open-telemetry/opentelemetry-collector
+
+<details>
+<summary><b>general</b> · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-24 | Issue · open | [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) |
 
 </details>
 
