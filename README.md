@@ -318,12 +318,13 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**6** merged PRs · **4** open PRs · **6** PRs reviewed · **6** issues opened · **8** repositories
+**7** merged PRs · **3** open PRs · **6** PRs reviewed · **6** issues opened · **8** repositories
 
 #### Merged pull requests
 
 | Merged | Repository | Pull request |
 |---|---|---|
+| 2026-10-26 | opentelemetry-collector-contrib | [\[chore\]\[receiver/flinkmetrics\] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
 | 2026-10-20 | semantic-conventions | [\[k8s\] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
 | 2026-10-20 | semantic-conventions | [\[k8s\] Clarify memory working set metric descriptions](https://github.com/open-telemetry/semantic-conventions/pull/4184) |
 | 2026-10-20 | semantic-conventions | [\[k8s\] Add Pod level memory limit and request metrics](https://github.com/open-telemetry/semantic-conventions/pull/4158) |
@@ -337,16 +338,15 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 |---|---|---|
 | 2026-10-22 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
 | 2026-10-17 | opentelemetry-helm-charts | [docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
-| 2026-10-13 | opentelemetry-collector-contrib | [\[chore\]\[receiver/flinkmetrics\] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
 | 2026-10-10 | opentelemetry-collector-contrib | [\[chore\]\[processor/probabilisticsampler\] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
 
 #### Code reviews
 
 | Reviewed | Repository | Pull request |
 |---|---|---|
+| 2026-10-26 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638) |
 | 2026-10-21 | opentelemetry-helm-charts | [feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470) |
 | 2026-10-10 | opentelemetry-collector-contrib | [\[chore\] \[exporter/elasticsearch\] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781) |
-| 2026-10-09 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638) |
 | 2026-10-08 | opentelemetry-collector-contrib | [\[chore\]\[receiver/k8scluster\] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874) |
 | 2026-09-21 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231) |
 | 2026-09-21 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Emit well-formed obfuscated query plans](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135) |
@@ -355,18 +355,18 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892) | commented |
+| opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
+| opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
+| opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
+| opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
 | opentelemetry-collector-contrib | [\[receiver/sqlserver\]: Add tempdb space, file, and contention metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52059) | commented |
 | opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265) | commented |
 | opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Observability](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264) | commented |
-| opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
 | opentelemetry-collector-contrib | [\[receiver/kubelet_stats\] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198) | commented |
-| opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
-| opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
-| semantic-conventions | [Clarify server.address when a host agent connects to a local service via loopback](https://github.com/open-telemetry/semantic-conventions/issues/4026) | commented |
-| semantic-conventions | [\[k8s\] Define memory pod/container level limit and request metrics](https://github.com/open-telemetry/semantic-conventions/issues/4133) | commented |
 
-[…and 18 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 19 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 

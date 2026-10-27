@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-10-26",
+      "number": 52019,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019"
+    },
+    {
       "date": "2026-10-20",
       "number": 4219,
       "repo": "open-telemetry/semantic-conventions",
@@ -57,13 +64,6 @@
       "repo": "open-telemetry/opentelemetry-helm-charts",
       "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473"
-    },
-    {
-      "date": "2026-10-13",
-      "number": 52019,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019"
     },
     {
       "date": "2026-10-10",
