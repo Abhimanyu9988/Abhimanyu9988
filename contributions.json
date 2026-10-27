@@ -1,6 +1,54 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-26",
+      "number": 16228,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector/issues/16228",
+      "repo": "open-telemetry/opentelemetry-collector",
+      "title": "[scraperhelper] scraped_metric_points counts metrics instead of data points",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector/issues/16228#issuecomment-6423588673"
+    },
+    {
+      "author": "rajrohanyadav",
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-26",
+      "number": 51638,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "commented",
+      "title": "[receiver/flinkmetrics] Add opt-in flink.job.id resource attribute",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117"
+    },
+    {
+      "component": "receiver/kubeletstats",
+      "date": "2026-10-26",
+      "number": 52240,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6423688467"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-26",
+      "number": 51892,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] is unmaintained",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425"
+    },
+    {
       "component": "chart:operator",
       "date": "2026-10-24",
       "number": 2473,
@@ -163,6 +211,30 @@
       "title": "[k8s] Promote k8s pod volume metrics to release candidate",
       "type": "comment",
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4156#issuecomment-6295139855"
+    },
+    {
+      "component": "receiver/splunkhec",
+      "date": "2026-10-20",
+      "number": 51408,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/splunkhec] return 503 Server is busy on transient pipeline errors",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6294270954"
+    },
+    {
+      "component": "receiver/splunkhec",
+      "date": "2026-10-20",
+      "number": 51408,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/splunkhec] return 503 Server is busy on transient pipeline errors",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6291105453"
     },
     {
       "component": "receiver/flinkmetrics",
@@ -366,11 +438,31 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019#issuecomment-6152787258"
     },
     {
+      "additions": 3,
+      "approved_by": [
+        "crobert-1",
+        "rajrohanyadav",
+        "singhvibhanshu"
+      ],
       "component": "receiver/flinkmetrics",
       "date": "2026-10-13",
+      "deletions": 3,
+      "discussion": 5,
+      "files": 3,
+      "fixes": [],
+      "merged": "2026-10-26",
+      "merged_by": "songy23",
       "number": 52019,
+      "recognition": [
+        {
+          "by": "rajrohanyadav",
+          "date": "2026-10-23",
+          "text": "It would be really great if this can be merged soon and we can get a new maintainer.",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019#issuecomment-6358230168"
+        }
+      ],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "merged",
       "title": "[chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019"
