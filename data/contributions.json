@@ -1,6 +1,20 @@
 {
   "merged": [
     {
+      "date": "2026-10-28",
+      "number": 2473,
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473"
+    },
+    {
+      "date": "2026-10-27",
+      "number": 52406,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] receiver/flinkmetrics: match operator metrics on exact suffix",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406"
+    },
+    {
       "date": "2026-10-26",
       "number": 52019,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -52,18 +66,18 @@
   ],
   "open": [
     {
+      "date": "2026-10-27",
+      "number": 52450,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450"
+    },
+    {
       "date": "2026-10-22",
       "number": 52279,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
-    },
-    {
-      "date": "2026-10-17",
-      "number": 2473,
-      "repo": "open-telemetry/opentelemetry-helm-charts",
-      "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
-      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473"
     },
     {
       "date": "2026-10-10",
