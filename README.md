@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**7 merged PRs** · 3 in review · 3 closed · **6 PRs reviewed** · 36 comments on others' issues and PRs · 6 issues opened
+**9 merged PRs** · 3 in review · 3 closed · **7 PRs reviewed** · 36 comments on others' issues and PRs · 8 issues opened
 
 Active since Feb 2024 across 8 repositories · components `area:k8s`, `chart:operator`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -28,6 +28,8 @@ Active since Feb 2024 across 8 repositories · components `area:k8s`, `chart:ope
 
 ### Merged
 
+- **[#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406)** · `receiver/flinkmetrics` · merged 2026-10-27 by songy23 · +99 −12 in 2 files
+- **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · merged 2026-10-28 by TylerHelmuth · approved by szelese · +58 −53 in 36 files
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark and dashpole · +246 −0 in 4 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
 - **[#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019)** · `receiver/flinkmetrics` · merged 2026-10-26 by songy23 · approved by crobert-1, rajrohanyadav and singhvibhanshu · +3 −3 in 3 files
 - **[#2456 fix(operator): allow overriding only manager.targetAllocatorImage.repository](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2456)** · merged 2026-10-13 by TylerHelmuth · +77 −58 in 39 files · fixes [#1866](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866)
@@ -38,8 +40,8 @@ Active since Feb 2024 across 8 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
+- **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-27
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
-- **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · opentelemetry-helm-charts · opened 2026-10-17
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
 
 ### Closed without merging
@@ -50,11 +52,11 @@ Active since Feb 2024 across 8 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-10-27 · Review · approved · [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) · opentelemetry-collector-contrib
+- 2026-10-27 · Issue · open · [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) · opentelemetry-collector-contrib
+- 2026-10-27 · Issue · open · [#3809 [Proposal] Searchable directory for OpenTelemetry SIGs, maintainers, and code owners](https://github.com/open-telemetry/community/issues/3809) · community
 - 2026-10-26 · Review · approved (2 rounds) · [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) · opentelemetry-collector-contrib
 - 2026-10-26 · Comment · [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6423688467) · opentelemetry-collector-contrib
-- 2026-10-26 · Comment · [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) · opentelemetry-collector-contrib
-- 2026-10-24 · Issue · open · [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) · opentelemetry-collector
-- 2026-10-24 · Comment · [#52265 Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265#issuecomment-6384093069) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -91,6 +93,22 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>receiver/flinkmetrics</b> · 3 PRs · 2 PRs reviewed · 2 comments · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-27 | PR · open | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
+| 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
+| 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
+| 2026-10-27 | Issue · open | [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) |
+| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
+| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
+| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
+| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
+
+</details>
+
+<details>
 <summary><b>receiver/kubeletstats</b> · 1 PR · 6 comments</summary>
 
 | Date | Type | Item |
@@ -102,18 +120,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-10-22 | Comment | [#52240 [receiver/kubeletstats] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240#issuecomment-6345826359) |
 | 2026-10-22 | Comment | [#52198 [receiver/kubelet_stats] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198#issuecomment-6344820621) |
 | 2026-10-12 | Comment | [#49927 [receiver/kubeletstats] Support collecting metrics through the Kubernetes API server node proxy](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49927#issuecomment-6129817221) |
-
-</details>
-
-<details>
-<summary><b>receiver/flinkmetrics</b> · 1 PR · 1 PR reviewed · 2 comments</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
-| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
-| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
-| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
 
 </details>
 
@@ -249,7 +255,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-17 | PR · open | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
+| 2026-10-17 | PR · merged 2026-10-28 | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
 | 2026-10-17 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) |
 | 2026-10-15 | Issue · open | [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
 | 2026-10-05 | Comment | [#1866 [operator] manager.targetAllocatorImage.repository not enough to configure a private registry](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/1866#issuecomment-5994719391) |
@@ -279,10 +285,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/community
 
 <details>
-<summary><b>general</b> · 1 issue</summary>
+<summary><b>general</b> · 2 issues</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-10-27 | Issue · open | [#3809 [Proposal] Searchable directory for OpenTelemetry SIGs, maintainers, and code owners](https://github.com/open-telemetry/community/issues/3809) |
 | 2026-10-13 | Issue · closed | [#3770 REQUEST: New membership for Abhimanyu9988](https://github.com/open-telemetry/community/issues/3770) |
 
 </details>

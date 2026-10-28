@@ -1,6 +1,69 @@
 {
   "records": [
     {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-27",
+      "number": 52450,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450"
+    },
+    {
+      "additions": 99,
+      "approved_by": [
+        "songy23"
+      ],
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-27",
+      "deletions": 12,
+      "discussion": 1,
+      "files": 2,
+      "fixes": [],
+      "merged": "2026-10-27",
+      "merged_by": "songy23",
+      "number": 52406,
+      "recognition": [],
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "merged",
+      "title": "[chore] receiver/flinkmetrics: match operator metrics on exact suffix",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406"
+    },
+    {
+      "author": "singhvibhanshu",
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-27",
+      "number": 52366,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[chore] Move @JonathanWamsley To Emeritus",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-27",
+      "number": 52405,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405"
+    },
+    {
+      "component": "general",
+      "date": "2026-10-27",
+      "number": 3809,
+      "repo": "open-telemetry/community",
+      "state": "open",
+      "title": "[Proposal] Searchable directory for OpenTelemetry SIGs, maintainers, and code owners",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/community/issues/3809"
+    },
+    {
       "component": "general",
       "date": "2026-10-26",
       "number": 16228,
@@ -249,11 +312,23 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019#issuecomment-6273311234"
     },
     {
+      "additions": 58,
+      "approved_by": [
+        "TylerHelmuth",
+        "szelese"
+      ],
       "component": "chart:operator",
       "date": "2026-10-17",
+      "deletions": 53,
+      "discussion": 5,
+      "files": 36,
+      "fixes": [],
+      "merged": "2026-10-28",
+      "merged_by": "TylerHelmuth",
       "number": 2473,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-helm-charts",
-      "state": "open",
+      "state": "merged",
       "title": "docs(operator): explain autoGenerateCert behavior with Argo CD",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473"
