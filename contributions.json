@@ -1,6 +1,64 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-28",
+      "number": 52485,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485"
+    },
+    {
+      "author": "shubhamrai9122-creator",
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-28",
+      "number": 51903,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[exporter/azuredataexplorer] Propagate context to ingestion submission",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-10-28",
+      "number": 52405,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405#issuecomment-6479381358"
+    },
+    {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-28",
+      "number": 52282,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Unmaintained component",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178"
+    },
+    {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-28",
+      "number": 51872,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101"
+    },
+    {
       "component": "receiver/flinkmetrics",
       "date": "2026-10-27",
       "number": 52450,
@@ -250,6 +308,20 @@
       "title": "feat(kube-stack): support additional instrumentation fields",
       "type": "review",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470#pullrequestreview-5598728293"
+    },
+    {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-10-21",
+      "date_label": "2026-10",
+      "doi": "10.1109/icnccom69117.2026.11736279",
+      "kind": "conference-paper",
+      "number": 0,
+      "repo": "",
+      "title": "An Entropy-Based Load Profiling and Custom Metric Tuning Framework for Kubernetes Autoscaling",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/icnccom69117.2026.11736279",
+      "venue": "2026 International Conference on Networks Computers and Communications (ICNCCom)"
     },
     {
       "component": "area:k8s",
