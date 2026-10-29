@@ -66,6 +66,13 @@
   ],
   "open": [
     {
+      "date": "2026-10-28",
+      "number": 52485,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485"
+    },
+    {
       "date": "2026-10-27",
       "number": 52450,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
