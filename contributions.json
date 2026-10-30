@@ -1,6 +1,28 @@
 {
   "records": [
     {
+      "component": "area:collector",
+      "date": "2026-10-29",
+      "number": 5742,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5742",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "Opentelemetrycollector crd: Specific receivers do not create services",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776"
+    },
+    {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-29",
+      "number": 52500,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
+    },
+    {
       "component": "general",
       "date": "2026-10-28",
       "number": 52485,
@@ -274,6 +296,18 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
     },
     {
+      "component": "processor/probabilisticsampler",
+      "date": "2026-10-22",
+      "number": 51952,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952#issuecomment-6345758173"
+    },
+    {
       "component": "receiver/kubeletstats",
       "date": "2026-10-22",
       "number": 52240,
@@ -507,7 +541,7 @@
       "date": "2026-10-15",
       "number": 2468,
       "repo": "open-telemetry/opentelemetry-helm-charts",
-      "state": "open",
+      "state": "closed",
       "title": "[kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)",
       "type": "issue",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468"
