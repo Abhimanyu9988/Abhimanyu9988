@@ -1,8 +1,1 @@
-[
-  {
-    "added": "2026-10-28",
-    "ref": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406",
-    "summary": "A small fix got merged in the Flink metrics receiver, and I liked it because it came from checking the code against a real Flink setup.\n\nThe receiver picked operator metrics by checking whether a metric name contained a certain word. So when it looked for numRecordsIn, it also matched numRecordsInPerSecond. The same happened with numRecordsOut.\n\nMost of the time that was harmless. Those rate metrics are usually decimals, which fail integer parsing and get ignored. But if a rate happened to be a whole number, it was quietly added to the record counter, and the count came out too high.\n\nThe fix matches on the exact name ending instead of any substring. It covers four operator metrics: numRecordsIn, numRecordsOut, numLateRecordsDropped and currentOutputWatermark. Metric names and attributes stay the same.\n\nHow I checked it:\n• Added a regression test with Flink-style names, including rate metrics with whole-number values\n• Without the fix, the test fails: in=17 and out=8 instead of 10 and 5\n• With the fix it passes, along with the full test suite and lint\n\nThanks to Yang Song (@songy23) for the review and for merging it.\n\nThis is one finding from a wider compatibility check of the rece",
-    "title": "Merged PR in open-telemetry/opentelemetry-collector-contrib: [chore] receiver/flinkmetrics: match operator metrics on exact suffix"
-  }
-]
+[]
