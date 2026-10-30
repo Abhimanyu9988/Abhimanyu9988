@@ -66,6 +66,13 @@
   ],
   "open": [
     {
+      "date": "2026-10-29",
+      "number": 52500,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
+    },
+    {
       "date": "2026-10-28",
       "number": 52485,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
