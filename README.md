@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**9 merged PRs** · 5 in review · 3 closed · **8 PRs reviewed** · 39 comments on others' issues and PRs · 8 issues opened
+**10 merged PRs** · 5 in review · 3 closed · **9 PRs reviewed** · 40 comments on others' issues and PRs · 8 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -28,6 +28,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Merged
 
+- **[#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500)** · `exporter/azuredataexplorer` · merged 2026-10-30 by codeboten · approved by singhvibhanshu and songy23 · +16 −9 in 6 files · fixes [#52282](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282)
 - **[#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406)** · `receiver/flinkmetrics` · merged 2026-10-27 by songy23 · +99 −12 in 2 files
 - **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · merged 2026-10-28 by TylerHelmuth · approved by szelese · +58 −53 in 36 files
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark and dashpole · +246 −0 in 4 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
@@ -40,7 +41,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
-- **[#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500)** · `exporter/azuredataexplorer` · opentelemetry-collector-contrib · opened 2026-10-29
+- **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · opentelemetry-operator · opened 2026-10-30
 - **[#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485)** · opentelemetry-collector-contrib · opened 2026-10-28
 - **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-27
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
@@ -54,11 +55,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-10-30 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644) · opentelemetry-operator
+- 2026-10-30 · Review · approved · [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) · opentelemetry-collector-contrib
 - 2026-10-29 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776) · opentelemetry-operator
 - 2026-10-28 · Review · approved · [#51903 [exporter/azuredataexplorer] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076) · opentelemetry-collector-contrib
 - 2026-10-28 · Comment · [#52282 [exporter/azuredataexplorer] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178) · opentelemetry-collector-contrib
-- 2026-10-28 · Comment · [#51872 [exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101) · opentelemetry-collector-contrib
-- 2026-10-27 · Review · approved · [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -127,11 +128,12 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>exporter/azuredataexplorer</b> · 1 PR · 1 PR reviewed · 2 comments</summary>
+<summary><b>exporter/azuredataexplorer</b> · 1 PR · 2 PRs reviewed · 2 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-29 | PR · open | [#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
+| 2026-10-30 | Review · approved | [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) |
+| 2026-10-29 | PR · merged 2026-10-30 | [#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
 | 2026-10-28 | Review · approved | [#51903 [exporter/azuredataexplorer] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076) |
 | 2026-10-28 | Comment | [#52282 [exporter/azuredataexplorer] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178) |
 | 2026-10-28 | Comment | [#51872 [exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101) |
@@ -306,6 +308,27 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 </details>
 
+#### open-telemetry/opentelemetry-operator
+
+<details>
+<summary><b>area:collector</b> · 2 comments</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-30 | Comment | [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644) |
+| 2026-10-29 | Comment | [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776) |
+
+</details>
+
+<details>
+<summary><b>general</b> · 1 PR</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-30 | PR · open | [#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |
+
+</details>
+
 #### open-telemetry/community
 
 <details>
@@ -326,17 +349,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 | Date | Type | Item |
 |---|---|---|
 | 2026-10-24 | Issue · open | [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) |
-
-</details>
-
-#### open-telemetry/opentelemetry-operator
-
-<details>
-<summary><b>area:collector</b> · 1 comment</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-29 | Comment | [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776) |
 
 </details>
 

@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-30",
+      "number": 5850,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "state": "open",
+      "title": "[chore] Generate a list of collector components with specific operator support",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
+    },
+    {
+      "component": "area:collector",
+      "date": "2026-10-30",
+      "number": 5742,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5742",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "Opentelemetrycollector crd: Specific receivers do not create services",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644"
+    },
+    {
+      "author": "tanmaya-panda1",
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-30",
+      "number": 50083,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[exporter/azuredataexplorer] Add optional support for metric exemplars",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836"
+    },
+    {
       "component": "area:collector",
       "date": "2026-10-29",
       "number": 5742,
@@ -13,11 +47,26 @@
       "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776"
     },
     {
+      "additions": 16,
+      "approved_by": [
+        "codeboten",
+        "singhvibhanshu",
+        "songy23"
+      ],
       "component": "exporter/azuredataexplorer",
       "date": "2026-10-29",
+      "deletions": 9,
+      "discussion": 4,
+      "files": 6,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282"
+      ],
+      "merged": "2026-10-30",
+      "merged_by": "codeboten",
       "number": 52500,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "merged",
       "title": "[exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
