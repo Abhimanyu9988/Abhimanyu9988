@@ -372,12 +372,13 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**9** merged PRs · **5** open PRs · **8** PRs reviewed · **8** issues opened · **9** repositories
+**10** merged PRs · **5** open PRs · **9** PRs reviewed · **8** issues opened · **9** repositories
 
 #### Merged pull requests
 
 | Merged | Repository | Pull request |
 |---|---|---|
+| 2026-10-30 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
 | 2026-10-28 | opentelemetry-helm-charts | [docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
 | 2026-10-27 | opentelemetry-collector-contrib | [\[chore\] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
 | 2026-10-26 | opentelemetry-collector-contrib | [\[chore\]\[receiver/flinkmetrics\] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
@@ -392,7 +393,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Opened | Repository | Pull request |
 |---|---|---|
-| 2026-10-29 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
+| 2026-10-30 | opentelemetry-operator | [\[chore\] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |
 | 2026-10-28 | opentelemetry-collector-contrib | [\[chore\] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
 | 2026-10-27 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
 | 2026-10-22 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
@@ -402,6 +403,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Reviewed | Repository | Pull request |
 |---|---|---|
+| 2026-10-30 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083) |
 | 2026-10-28 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903) |
 | 2026-10-27 | opentelemetry-collector-contrib | [\[chore\] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366) |
 | 2026-10-26 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638) |
@@ -415,15 +417,15 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
+| opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282) | commented |
+| opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872) | commented |
 | opentelemetry-operator | [Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742) | commented |
 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) | opened |
-| opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282) | commented |
-| opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872) | commented |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892) | commented |
-| opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
 
 […and 24 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)

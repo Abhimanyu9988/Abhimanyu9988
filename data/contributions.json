@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-10-30",
+      "number": 52500,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
+    },
+    {
       "date": "2026-10-28",
       "number": 2473,
       "repo": "open-telemetry/opentelemetry-helm-charts",
@@ -66,11 +73,11 @@
   ],
   "open": [
     {
-      "date": "2026-10-29",
-      "number": 52500,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
+      "date": "2026-10-30",
+      "number": 5850,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "[chore] Generate a list of collector components with specific operator support",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
     },
     {
       "date": "2026-10-28",
