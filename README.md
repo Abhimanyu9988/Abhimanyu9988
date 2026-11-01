@@ -411,6 +411,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282) | commented |
 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872) | commented |
@@ -420,9 +421,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) | opened |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892) | commented |
-| opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
 
-[…and 24 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 25 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
