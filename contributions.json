@@ -1,6 +1,30 @@
 {
   "records": [
     {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-31",
+      "number": 49082,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Support exporting min/max for histogram metrics",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933"
+    },
+    {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-10-31",
+      "number": 49082,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Support exporting min/max for histogram metrics",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435"
+    },
+    {
       "component": "general",
       "date": "2026-10-30",
       "number": 5850,
@@ -72,7 +96,7 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
     },
     {
-      "component": "general",
+      "component": "receiver/flinkmetrics",
       "date": "2026-10-28",
       "number": 52485,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
