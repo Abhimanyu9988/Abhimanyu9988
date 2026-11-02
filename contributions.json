@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-10-31",
+      "number": 5850,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "[chore] Generate a list of collector components with specific operator support",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850#issuecomment-6549289772"
+    },
+    {
       "component": "exporter/azuredataexplorer",
       "date": "2026-10-31",
       "number": 49082,
