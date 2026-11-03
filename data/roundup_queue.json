@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "added": "2026-11-03",
+    "ref": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485",
+    "summary": "A small docs fix I made for the Flink metrics receiver was merged into OpenTelemetry Collector Contrib. It's only a few lines, but it corrects a detail that could confuse a first setup.\n\nThe README said the receiver's default endpoint was http://localhost:15672. The code actually defaults to http://localhost:8081. Anyone copying the old value would have pointed the receiver at the wrong place.\n\nWhat changed:\n• The README now lists the tested Flink versions (1.20.5 and 2.3.0) instead of the old 1.13.6 and 1.14.4\n• The default endpoint now matches defaultEndpoint in config.go\n• The Flink docs links point to the stable docs instead of the 1.14 release\n\nIt's documentation only. No receiver behavior or metrics changed.\n\nI checked the endpoint against config.go and confirmed the new links land on the right Flink REST API sections. I also grepped to make sure no references to the old port or the 1.14 docs remain, and ran make generate to confirm it produced no further changes.\n\nThanks to Vihas Makwana for the approval and Yang Song for merging. This is part of a wider compatibility check on the receiver, tracked in #52405.\n\nDocs drift quietly, and re-checking them against the code is chea",
+    "title": "Merged PR in open-telemetry/opentelemetry-collector-contrib: [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration"
+  }
+]

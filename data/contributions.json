@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-11-02",
+      "number": 52485,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485"
+    },
+    {
       "date": "2026-10-30",
       "number": 52500,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -78,13 +85,6 @@
       "repo": "open-telemetry/opentelemetry-operator",
       "title": "[chore] Generate a list of collector components with specific operator support",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
-    },
-    {
-      "date": "2026-10-28",
-      "number": 52485,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485"
     },
     {
       "date": "2026-10-27",
