@@ -2,6 +2,30 @@
   "records": [
     {
       "component": "general",
+      "date": "2026-11-02",
+      "number": 16284,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector/pull/16284",
+      "repo": "open-telemetry/opentelemetry-collector",
+      "title": "fix(scraperhelper): count data points instead of metric objects in scraped_metric_points",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-11-02",
+      "number": 52485,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485#issuecomment-6576057806"
+    },
+    {
+      "component": "general",
       "date": "2026-10-31",
       "number": 5850,
       "on": "pr",
@@ -108,11 +132,22 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500"
     },
     {
+      "additions": 5,
+      "approved_by": [
+        "VihasMakwana"
+      ],
       "component": "receiver/flinkmetrics",
       "date": "2026-10-28",
+      "deletions": 5,
+      "discussion": 3,
+      "files": 2,
+      "fixes": [],
+      "merged": "2026-11-02",
+      "merged_by": "songy23",
       "number": 52485,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "merged",
       "title": "[chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485"

@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**10 merged PRs** · 5 in review · 3 closed · **9 PRs reviewed** · 42 comments on others' issues and PRs · 8 issues opened
+**11 merged PRs** · 4 in review · 3 closed · **9 PRs reviewed** · 43 comments on others' issues and PRs · 8 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -29,6 +29,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 ### Merged
 
 - **[#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500)** · `exporter/azuredataexplorer` · merged 2026-10-30 by codeboten · approved by singhvibhanshu and songy23 · +16 −9 in 6 files · fixes [#52282](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282)
+- **[#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485)** · `receiver/flinkmetrics` · merged 2026-11-02 by songy23 · approved by VihasMakwana · +5 −5 in 2 files
 - **[#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406)** · `receiver/flinkmetrics` · merged 2026-10-27 by songy23 · +99 −12 in 2 files
 - **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · merged 2026-10-28 by TylerHelmuth · approved by szelese · +58 −53 in 36 files
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark and dashpole · +246 −0 in 4 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
@@ -42,7 +43,6 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 ### In review
 
 - **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · opentelemetry-operator · opened 2026-10-30
-- **[#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-28
 - **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-27
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
@@ -55,11 +55,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-02 · Comment on PR · [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) · opentelemetry-collector
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) · opentelemetry-collector-contrib
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) · opentelemetry-collector-contrib
 - 2026-10-30 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644) · opentelemetry-operator
 - 2026-10-30 · Review · approved · [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) · opentelemetry-collector-contrib
-- 2026-10-29 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6494544776) · opentelemetry-operator
 
 ### Publications
 
@@ -101,7 +101,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-28 | PR · open | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
+| 2026-10-28 | PR · merged 2026-11-02 | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
 | 2026-10-27 | PR · open | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
 | 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
 | 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
@@ -338,10 +338,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector
 
 <details>
-<summary><b>general</b> · 1 issue</summary>
+<summary><b>general</b> · 1 comment · 1 issue</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-11-02 | Comment on PR | [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) |
 | 2026-10-24 | Issue · open | [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) |
 
 </details>
