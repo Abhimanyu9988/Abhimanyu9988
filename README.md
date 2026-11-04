@@ -368,7 +368,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**11** merged PRs · **4** open PRs · **9** PRs reviewed · **8** issues opened · **9** repositories
+**11** merged PRs · **4** open PRs · **10** PRs reviewed · **8** issues opened · **9** repositories
 
 #### Merged pull requests
 
@@ -400,6 +400,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Reviewed | Repository | Pull request |
 |---|---|---|
+| 2026-11-03 | opentelemetry-collector-contrib | [\[chore\]\[exporter/azuredataexplorer\] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654) |
 | 2026-10-30 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083) |
 | 2026-10-28 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903) |
 | 2026-10-27 | opentelemetry-collector-contrib | [\[chore\] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366) |
