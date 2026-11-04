@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**11 merged PRs** · 4 in review · 3 closed · **9 PRs reviewed** · 43 comments on others' issues and PRs · 8 issues opened
+**11 merged PRs** · 4 in review · 3 closed · **10 PRs reviewed** · 43 comments on others' issues and PRs · 8 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -55,16 +55,16 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-03 · Review · approved · [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) · opentelemetry-collector-contrib
 - 2026-11-02 · Comment on PR · [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) · opentelemetry-collector
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) · opentelemetry-collector-contrib
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) · opentelemetry-collector-contrib
 - 2026-10-30 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644) · opentelemetry-operator
-- 2026-10-30 · Review · approved · [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) · opentelemetry-collector-contrib
 
 ### Publications
 
 - 2026-10 · [An Entropy-Based Load Profiling and Custom Metric Tuning Framework for Kubernetes Autoscaling](https://doi.org/10.1109/icnccom69117.2026.11736279) · _2026 International Conference on Networks Computers and Communications (ICNCCom)_
-- 2026-04 · [Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms](https://doi.org/10.1109/iecct68664.2026.11541572) · _2026 International Conference on Recent Advancement in Electrical, Computer and Communication Technologies (IECCT)_
+- 2026 · [Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms](https://doi.org/10.1109/iecct68664.2026.11541572) · _2026 International Conference on Recent Advancement in Electrical Computer and Communication Technologies Iecct 2026_
 
 ### Peer review
 
@@ -114,10 +114,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>exporter/azuredataexplorer</b> · 1 PR · 2 PRs reviewed · 4 comments</summary>
+<summary><b>exporter/azuredataexplorer</b> · 1 PR · 3 PRs reviewed · 4 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-11-03 | Review · approved | [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) |
 | 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) |
 | 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) |
 | 2026-10-30 | Review · approved | [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) |

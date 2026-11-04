@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "author": "tanmaya-panda1",
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-11-03",
+      "number": 52654,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856"
+    },
+    {
       "component": "general",
       "date": "2026-11-02",
       "number": 16284,
@@ -1329,20 +1341,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636"
     },
     {
-      "citations": 0,
-      "component": "general",
-      "date": "2026-04-10",
-      "date_label": "2026-04",
-      "doi": "10.1109/iecct68664.2026.11541572",
-      "kind": "conference-paper",
-      "number": 0,
-      "repo": "",
-      "title": "Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms",
-      "type": "paper",
-      "url": "https://doi.org/10.1109/iecct68664.2026.11541572",
-      "venue": "2026 International Conference on Recent Advancement in Electrical, Computer and Communication Technologies (IECCT)"
-    },
-    {
       "component": "general",
       "date": "2026-01-01",
       "date_label": "2026",
@@ -1380,6 +1378,20 @@
       "type": "peer_review",
       "url": "https://orcid.org/0009-0005-1179-009X#review-27918957",
       "venue": "Discover Computing"
+    },
+    {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-01-01",
+      "date_label": "2026",
+      "doi": "10.1109/iecct68664.2026.11541572",
+      "kind": "conference-paper",
+      "number": 0,
+      "repo": "",
+      "title": "Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/iecct68664.2026.11541572",
+      "venue": "2026 International Conference on Recent Advancement in Electrical Computer and Communication Technologies Iecct 2026"
     },
     {
       "component": "general",
