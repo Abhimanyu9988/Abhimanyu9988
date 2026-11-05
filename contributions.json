@@ -1331,6 +1331,34 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5668652073"
     },
     {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-09-01",
+      "date_label": "2026-09",
+      "doi": "10.1109/icosics70095.2026.11746832",
+      "kind": "conference-paper",
+      "number": 0,
+      "repo": "",
+      "title": "Trust-Aware Hybrid Cloud Security Architecture Using Blockchain and Machine Learning for Secure Service Provisioning",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/icosics70095.2026.11746832",
+      "venue": "2026 International Conference on Secure IoT and Cybersecurity (ICOSICS)"
+    },
+    {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-09-01",
+      "date_label": "2026-09",
+      "doi": "10.1109/icoici69824.2026.11724331",
+      "kind": "conference-proceedings",
+      "number": 0,
+      "repo": "",
+      "title": "Kubernetes-based Cloud Computing Framework for IoT Applications",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/icoici69824.2026.11724331",
+      "venue": "2026 4th International Conference on Intelligent Cyber Physical Systems and Internet of Things (ICoICI)"
+    },
+    {
       "component": "processor/probabilisticsampler",
       "date": "2026-08-31",
       "number": 50636,
@@ -1339,6 +1367,20 @@
       "title": "[processor/probabilisticsampler] Add Warnings section to README",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636"
+    },
+    {
+      "citations": 0,
+      "component": "general",
+      "date": "2026-08-01",
+      "date_label": "2026-08",
+      "doi": "10.1109/icsl-dsga70378.2026.11736471",
+      "kind": "conference-proceedings",
+      "number": 0,
+      "repo": "",
+      "title": "A Resilient Data Security Framework for Resource-Constrained Cloud Networked IoT Devices",
+      "type": "paper",
+      "url": "https://doi.org/10.1109/icsl-dsga70378.2026.11736471",
+      "venue": "2026 International Conference on Statistical Learning, Data Science &amp; Generative AI (ICSL-DSGA)"
     },
     {
       "component": "general",
@@ -1380,7 +1422,7 @@
       "venue": "Discover Computing"
     },
     {
-      "citations": 0,
+      "citations": 7,
       "component": "general",
       "date": "2026-01-01",
       "date_label": "2026",

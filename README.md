@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
-2 publications · 3 peer reviews for Discover Computing and IEEE Access
+5 publications (7 citations) · 3 peer reviews for Discover Computing and IEEE Access
 
 [LinkedIn](https://www.linkedin.com/in/theabhibajaj/) · [ORCID](https://orcid.org/0009-0005-1179-009X)
 
@@ -64,7 +64,10 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 ### Publications
 
 - 2026-10 · [An Entropy-Based Load Profiling and Custom Metric Tuning Framework for Kubernetes Autoscaling](https://doi.org/10.1109/icnccom69117.2026.11736279) · _2026 International Conference on Networks Computers and Communications (ICNCCom)_
-- 2026 · [Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms](https://doi.org/10.1109/iecct68664.2026.11541572) · _2026 International Conference on Recent Advancement in Electrical Computer and Communication Technologies Iecct 2026_
+- 2026-09 · [Trust-Aware Hybrid Cloud Security Architecture Using Blockchain and Machine Learning for Secure Service Provisioning](https://doi.org/10.1109/icosics70095.2026.11746832) · _2026 International Conference on Secure IoT and Cybersecurity (ICOSICS)_
+- 2026-09 · [Kubernetes-based Cloud Computing Framework for IoT Applications](https://doi.org/10.1109/icoici69824.2026.11724331) · _2026 4th International Conference on Intelligent Cyber Physical Systems and Internet of Things (ICoICI)_
+- 2026-08 · [A Resilient Data Security Framework for Resource-Constrained Cloud Networked IoT Devices](https://doi.org/10.1109/icsl-dsga70378.2026.11736471) · _2026 International Conference on Statistical Learning, Data Science &amp; Generative AI (ICSL-DSGA)_
+- 2026 · [Energy-Efficient Container Orchestration for HPC Workloads using ML in Kubernetes on Cloud Platforms](https://doi.org/10.1109/iecct68664.2026.11541572) · _2026 International Conference on Recent Advancement in Electrical Computer and Communication Technologies Iecct 2026_ · cited by 7
 
 ### Peer review
 
