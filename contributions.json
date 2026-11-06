@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "component": "chart:operator",
+      "date": "2026-11-05",
+      "number": 2161,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161",
+      "repo": "open-telemetry/opentelemetry-helm-charts",
+      "title": "[Operator] Cert invalid after cluster restart",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198"
+    },
+    {
       "author": "tanmaya-panda1",
       "component": "exporter/azuredataexplorer",
       "date": "2026-11-03",

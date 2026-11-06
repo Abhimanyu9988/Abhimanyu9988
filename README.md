@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**11 merged PRs** · 4 in review · 3 closed · **10 PRs reviewed** · 43 comments on others' issues and PRs · 8 issues opened
+**11 merged PRs** · 4 in review · 3 closed · **10 PRs reviewed** · 44 comments on others' issues and PRs · 8 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -55,11 +55,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-05 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198) · opentelemetry-helm-charts
 - 2026-11-03 · Review · approved · [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) · opentelemetry-collector-contrib
 - 2026-11-02 · Comment on PR · [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) · opentelemetry-collector
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) · opentelemetry-collector-contrib
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) · opentelemetry-collector-contrib
-- 2026-10-30 · Comment · [#5742 Opentelemetrycollector crd: Specific receivers do not create services](https://github.com/open-telemetry/opentelemetry-operator/issues/5742#issuecomment-6525318644) · opentelemetry-operator
 
 ### Publications
 
@@ -275,10 +275,11 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-helm-charts
 
 <details>
-<summary><b>chart:operator</b> · 1 PR · 3 comments · 1 issue</summary>
+<summary><b>chart:operator</b> · 1 PR · 4 comments · 1 issue</summary>
 
 | Date | Type | Item |
 |---|---|---|
+| 2026-11-05 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198) |
 | 2026-10-17 | PR · merged 2026-10-28 | [#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
 | 2026-10-17 | Comment | [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6236969702) |
 | 2026-10-15 | Issue · closed | [#2468 [kube-stack] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) |
