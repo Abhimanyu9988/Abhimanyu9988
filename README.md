@@ -420,6 +420,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | Repository | Issue or PR | Role |
 |---|---|---|
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
+| opentelemetry-helm-charts | [\[Operator\] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161) | commented |
 | opentelemetry-collector | [fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284) | commented |
 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082) | commented |
 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282) | commented |
@@ -428,7 +429,6 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-helm-charts | [\[kube-stack\] Support missing InstrumentationSpec fields (exporter.tls, php, imagePullPolicy, initContainerSecurityContext)](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2468) | opened |
 | opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
-| opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) | opened |
 
 […and 26 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
