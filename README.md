@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**11 merged PRs** · 4 in review · 3 closed · **10 PRs reviewed** · 44 comments on others' issues and PRs · 8 issues opened
+**12 merged PRs** · 5 in review · 3 closed · **10 PRs reviewed** · 45 comments on others' issues and PRs · 9 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -30,6 +30,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 - **[#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500)** · `exporter/azuredataexplorer` · merged 2026-10-30 by codeboten · approved by singhvibhanshu and songy23 · +16 −9 in 6 files · fixes [#52282](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282)
 - **[#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485)** · `receiver/flinkmetrics` · merged 2026-11-02 by songy23 · approved by VihasMakwana · +5 −5 in 2 files
+- **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · merged 2026-11-06 by songy23 · approved by constanca-m and singhvibhanshu · +143 −16 in 3 files
 - **[#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406)** · `receiver/flinkmetrics` · merged 2026-10-27 by songy23 · +99 −12 in 2 files
 - **[#2473 docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473)** · `chart:operator` · merged 2026-10-28 by TylerHelmuth · approved by szelese · +58 −53 in 36 files
 - **[#4219 [k8s] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219)** · `area:k8s` · merged 2026-10-20 by joaopgrassi · approved by ChrsMark and dashpole · +246 −0 in 4 files · fixes [#4133](https://github.com/open-telemetry/semantic-conventions/issues/4133)
@@ -42,8 +43,9 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
+- **[#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-11-06
+- **[#52822 [exporter/azuredataexplorer] Rename component type to azure_data_explorer](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822)** · `exporter/azuredataexplorer` · opentelemetry-collector-contrib · opened 2026-11-06
 - **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · opentelemetry-operator · opened 2026-10-30
-- **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-10-27
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
 
@@ -55,11 +57,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-06 · Issue · open · [#52823 [exporter/azuredataexplorer] Exponential histogram metrics are dropped during conversion](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52823) · opentelemetry-collector-contrib
 - 2026-11-05 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198) · opentelemetry-helm-charts
 - 2026-11-03 · Review · approved · [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) · opentelemetry-collector-contrib
 - 2026-11-02 · Comment on PR · [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) · opentelemetry-collector
 - 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) · opentelemetry-collector-contrib
-- 2026-10-31 · Comment · [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) · opentelemetry-collector-contrib
 
 ### Publications
 
@@ -82,6 +84,42 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector-contrib
 
 <details>
+<summary><b>exporter/azuredataexplorer</b> · 2 PRs · 3 PRs reviewed · 4 comments · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-11-06 | PR · open | [#52822 [exporter/azuredataexplorer] Rename component type to azure_data_explorer](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822) |
+| 2026-11-06 | Issue · open | [#52823 [exporter/azuredataexplorer] Exponential histogram metrics are dropped during conversion](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52823) |
+| 2026-11-03 | Review · approved | [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) |
+| 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) |
+| 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) |
+| 2026-10-30 | Review · approved | [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) |
+| 2026-10-29 | PR · merged 2026-10-30 | [#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
+| 2026-10-28 | Review · approved | [#51903 [exporter/azuredataexplorer] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076) |
+| 2026-10-28 | Comment | [#52282 [exporter/azuredataexplorer] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178) |
+| 2026-10-28 | Comment | [#51872 [exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101) |
+
+</details>
+
+<details>
+<summary><b>receiver/flinkmetrics</b> · 5 PRs · 2 PRs reviewed · 2 comments · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-11-06 | PR · open | [#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832) |
+| 2026-10-28 | PR · merged 2026-11-02 | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
+| 2026-10-27 | PR · merged 2026-11-06 | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
+| 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
+| 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
+| 2026-10-27 | Issue · open | [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) |
+| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
+| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
+| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
+| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
+
+</details>
+
+<details>
 <summary><b>receiver/sqlserver</b> · 2 PRs · 2 PRs reviewed · 6 comments</summary>
 
 | Date | Type | Item |
@@ -96,39 +134,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-09-17 | PR · merged 2026-09-21 | [#51138 [chore] [receiver/sqlserver] Document TLS handshake failures on Windows Server 2012 R2 and older](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51138) |
 | 2026-09-17 | Comment | [#50111 [receiver/sqlserver] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111#issuecomment-5717114483) |
 | 2026-09-14 | Comment | [#50774 [receiver/sqlserver] TLS handshake fails on Windows Server 2012 R2 hosts; encrypt=disable is the workaround (diagnosis for #44058)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50774#issuecomment-5668652073) |
-
-</details>
-
-<details>
-<summary><b>receiver/flinkmetrics</b> · 4 PRs · 2 PRs reviewed · 2 comments · 1 issue</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-28 | PR · merged 2026-11-02 | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
-| 2026-10-27 | PR · open | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
-| 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
-| 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
-| 2026-10-27 | Issue · open | [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) |
-| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
-| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
-| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
-| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
-
-</details>
-
-<details>
-<summary><b>exporter/azuredataexplorer</b> · 1 PR · 3 PRs reviewed · 4 comments</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-11-03 | Review · approved | [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) |
-| 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549352933) |
-| 2026-10-31 | Comment | [#49082 [exporter/azuredataexplorer] Support exporting min/max for histogram metrics](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435) |
-| 2026-10-30 | Review · approved | [#50083 [exporter/azuredataexplorer] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083#pullrequestreview-5717944836) |
-| 2026-10-29 | PR · merged 2026-10-30 | [#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500) |
-| 2026-10-28 | Review · approved | [#51903 [exporter/azuredataexplorer] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076) |
-| 2026-10-28 | Comment | [#52282 [exporter/azuredataexplorer] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178) |
-| 2026-10-28 | Comment | [#51872 [exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101) |
 
 </details>
 
@@ -159,6 +164,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
+<summary><b>receiver/splunkhec</b> · 3 comments</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-10-21 | Comment on PR | [#52230 [receiver/splunkhec] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230#issuecomment-6324029468) |
+| 2026-10-20 | Comment on PR | [#51408 [receiver/splunkhec] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6294270954) |
+| 2026-10-20 | Comment on PR | [#51408 [receiver/splunkhec] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6291105453) |
+
+</details>
+
+<details>
 <summary><b>processor/k8sattributes</b> · 2 comments</summary>
 
 | Date | Type | Item |
@@ -175,16 +191,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 |---|---|---|
 | 2026-10-10 | PR · open | [#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
 | 2026-08-31 | PR · closed | [#50636 [processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50636) |
-
-</details>
-
-<details>
-<summary><b>receiver/splunkhec</b> · 2 comments</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-10-20 | Comment on PR | [#51408 [receiver/splunkhec] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6294270954) |
-| 2026-10-20 | Comment on PR | [#51408 [receiver/splunkhec] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408#issuecomment-6291105453) |
 
 </details>
 
