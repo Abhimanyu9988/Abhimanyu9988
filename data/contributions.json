@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-11-06",
+      "number": 52450,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450"
+    },
+    {
       "date": "2026-11-02",
       "number": 52485,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -80,18 +87,25 @@
   ],
   "open": [
     {
+      "date": "2026-11-06",
+      "number": 52832,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] Support additional JVM garbage collectors",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832"
+    },
+    {
+      "date": "2026-11-06",
+      "number": 52822,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Rename component type to azure_data_explorer",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822"
+    },
+    {
       "date": "2026-10-30",
       "number": 5850,
       "repo": "open-telemetry/opentelemetry-operator",
       "title": "[chore] Generate a list of collector components with specific operator support",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
-    },
-    {
-      "date": "2026-10-27",
-      "number": 52450,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450"
     },
     {
       "date": "2026-10-22",
