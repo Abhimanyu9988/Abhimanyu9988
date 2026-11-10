@@ -1,6 +1,42 @@
 {
   "records": [
     {
+      "author": "telescui",
+      "component": "receiver/kubeletstats",
+      "date": "2026-11-09",
+      "number": 52877,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52877",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "approved",
+      "title": "[receiver/kubeletstats] Added k8s.pod.filesystem.inode.used metric",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52877#pullrequestreview-5827418050"
+    },
+    {
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-11-09",
+      "number": 52822,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Rename component type to azure_data_explorer",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822#issuecomment-6743274021"
+    },
+    {
+      "component": "processor/probabilisticsampler",
+      "date": "2026-11-09",
+      "number": 51952,
+      "on": "pr",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952#issuecomment-6741645748"
+    },
+    {
       "component": "receiver/flinkmetrics",
       "date": "2026-11-06",
       "number": 52832,
@@ -11,11 +47,25 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832"
     },
     {
+      "additions": 33,
+      "approved_by": [
+        "codeboten",
+        "crobert-1",
+        "singhvibhanshu",
+        "tanmaya-panda1"
+      ],
       "component": "exporter/azuredataexplorer",
       "date": "2026-11-06",
+      "deletions": 23,
+      "discussion": 3,
+      "files": 11,
+      "fixes": [],
+      "merged": "2026-11-09",
+      "merged_by": "songy23",
       "number": 52822,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "merged",
       "title": "[exporter/azuredataexplorer] Rename component type to azure_data_explorer",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822"
