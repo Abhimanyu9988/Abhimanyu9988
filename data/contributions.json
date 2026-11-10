@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-11-09",
+      "number": 52822,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Rename component type to azure_data_explorer",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822"
+    },
+    {
       "date": "2026-11-06",
       "number": 52450,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -92,13 +99,6 @@
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[receiver/flinkmetrics] Support additional JVM garbage collectors",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832"
-    },
-    {
-      "date": "2026-11-06",
-      "number": 52822,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[exporter/azuredataexplorer] Rename component type to azure_data_explorer",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822"
     },
     {
       "date": "2026-10-30",

@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "added": "2026-11-10",
+    "ref": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822",
+    "summary": "A small tidy-up got merged this week: the Azure Data Explorer exporter in the OpenTelemetry Collector now has a cleaner name.\n\nThe component type used to be azuredataexplorer. It's now azure_data_explorer, which matches the Collector's lower_snake_case naming convention. It's one piece of a wider effort to make component names consistent across the project.\n\nExisting setups don't break. The old name still works as a deprecated alias, so current configs keep running while people move over. The docs and example config now use the new name, and there's a changelog entry about the deprecation.\n\nBefore opening the PR I ran the generators, the full test suite, the linter and the changelog validation, and all of them passed.\n\nThanks to Alex Boten, Curtis Robert, Vibhanshu Singh and Tanmaya Panda for the reviews, and to Yang Song for merging.\n\nIf you use this exporter, it's worth switching your config to azure_data_explorer when it suits you.\n\nhttps://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822\n\n#OpenTelemetry #OpenSource #Observability #OpenTelemetryCollector",
+    "title": "Merged PR in open-telemetry/opentelemetry-collector-contrib: [exporter/azuredataexplorer] Rename component type to azure_data_explorer"
+  }
+]
