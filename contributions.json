@@ -1,6 +1,40 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-11-12",
+      "number": 5924,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "state": "open",
+      "title": "Fix _link in target allocator /jobs/{job}/targets response",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5924"
+    },
+    {
+      "component": "area:target-allocator",
+      "date": "2026-11-12",
+      "number": 5897,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5897",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "Target allocator: `_link` in `/jobs/{job}/targets` returns 404",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5897#issuecomment-6837808357"
+    },
+    {
+      "component": "area:target-allocator",
+      "date": "2026-11-12",
+      "number": 5896,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5896",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "Target allocator: `/debug/target` writes two pages when `target_hash` is not a number",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339"
+    },
+    {
       "author": "telescui",
       "component": "receiver/kubeletstats",
       "date": "2026-11-09",
@@ -213,11 +247,24 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/49082#issuecomment-6549342435"
     },
     {
+      "additions": 255,
+      "approved_by": [
+        "iblancasa",
+        "jaronoff97",
+        "swiatekm"
+      ],
       "component": "general",
       "date": "2026-10-30",
+      "deletions": 2,
+      "discussion": 4,
+      "files": 9,
+      "fixes": [],
+      "merged": "2026-11-12",
+      "merged_by": "jaronoff97",
       "number": 5850,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-operator",
-      "state": "open",
+      "state": "merged",
       "title": "[chore] Generate a list of collector components with specific operator support",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"

@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**13 merged PRs** · 4 in review · 3 closed · **11 PRs reviewed** · 45 comments on others' issues and PRs · 9 issues opened
+**14 merged PRs** · 4 in review · 3 closed · **11 PRs reviewed** · 47 comments on others' issues and PRs · 9 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -29,6 +29,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 ### Merged
 
 - **[#52822 [exporter/azuredataexplorer] Rename component type to azure_data_explorer](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822)** · `exporter/azuredataexplorer` · merged 2026-11-09 by songy23 · approved by codeboten, crobert-1, singhvibhanshu and tanmaya-panda1 · +33 −23 in 11 files
+- **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · merged 2026-11-12 by jaronoff97 · approved by iblancasa and swiatekm · +255 −2 in 9 files
 - **[#52500 [exporter/azuredataexplorer] Add Abhimanyu9988 as code owner and restore beta stability](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52500)** · `exporter/azuredataexplorer` · merged 2026-10-30 by codeboten · approved by singhvibhanshu and songy23 · +16 −9 in 6 files · fixes [#52282](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282)
 - **[#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485)** · `receiver/flinkmetrics` · merged 2026-11-02 by songy23 · approved by VihasMakwana · +5 −5 in 2 files
 - **[#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450)** · `receiver/flinkmetrics` · merged 2026-11-06 by songy23 · approved by constanca-m and singhvibhanshu · +143 −16 in 3 files
@@ -44,8 +45,8 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
+- **[#5924 Fix _link in target allocator /jobs/{job}/targets response](https://github.com/open-telemetry/opentelemetry-operator/pull/5924)** · opentelemetry-operator · opened 2026-11-12
 - **[#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-11-06
-- **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · opentelemetry-operator · opened 2026-10-30
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
 - **[#51952 [chore][processor/probabilisticsampler] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952)** · `processor/probabilisticsampler` · opentelemetry-collector-contrib · opened 2026-10-10
 
@@ -57,11 +58,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-12 · Comment · [#5897 Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897#issuecomment-6837808357) · opentelemetry-operator
+- 2026-11-12 · Comment · [#5896 Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339) · opentelemetry-operator
 - 2026-11-09 · Review · approved · [#52877 [receiver/kubeletstats] Added k8s.pod.filesystem.inode.used metric](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52877#pullrequestreview-5827418050) · opentelemetry-collector-contrib
 - 2026-11-06 · Issue · open · [#52823 [exporter/azuredataexplorer] Exponential histogram metrics are dropped during conversion](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52823) · opentelemetry-collector-contrib
 - 2026-11-05 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198) · opentelemetry-helm-charts
-- 2026-11-03 · Review · approved · [#52654 [chore][exporter/azuredataexplorer] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654#pullrequestreview-5751022856) · opentelemetry-collector-contrib
-- 2026-11-02 · Comment on PR · [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) · opentelemetry-collector
 
 ### Publications
 
@@ -327,11 +328,22 @@ _2 older items kept in [contributions.json](contributions.json)._
 </details>
 
 <details>
-<summary><b>general</b> · 1 PR</summary>
+<summary><b>area:target-allocator</b> · 2 comments</summary>
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-10-30 | PR · open | [#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |
+| 2026-11-12 | Comment | [#5897 Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897#issuecomment-6837808357) |
+| 2026-11-12 | Comment | [#5896 Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339) |
+
+</details>
+
+<details>
+<summary><b>general</b> · 2 PRs</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-11-12 | PR · open | [#5924 Fix _link in target allocator /jobs/{job}/targets response](https://github.com/open-telemetry/opentelemetry-operator/pull/5924) |
+| 2026-10-30 | PR · merged 2026-11-12 | [#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |
 
 </details>
 
