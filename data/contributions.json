@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-11-12",
+      "number": 5850,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "[chore] Generate a list of collector components with specific operator support",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
+    },
+    {
       "date": "2026-11-09",
       "number": 52822,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -94,18 +101,18 @@
   ],
   "open": [
     {
+      "date": "2026-11-12",
+      "number": 5924,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "Fix _link in target allocator /jobs/{job}/targets response",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5924"
+    },
+    {
       "date": "2026-11-06",
       "number": 52832,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[receiver/flinkmetrics] Support additional JVM garbage collectors",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832"
-    },
-    {
-      "date": "2026-10-30",
-      "number": 5850,
-      "repo": "open-telemetry/opentelemetry-operator",
-      "title": "[chore] Generate a list of collector components with specific operator support",
-      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5850"
     },
     {
       "date": "2026-10-22",
