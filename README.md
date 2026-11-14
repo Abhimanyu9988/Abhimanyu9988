@@ -441,8 +441,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | Repository | Issue or PR | Role |
 |---|---|---|
 | opentelemetry-operator | [Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896) | commented |
-| opentelemetry-operator | [Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
+| opentelemetry-operator | [Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897) | commented |
 | opentelemetry-collector-contrib | [\[internal/k8sinventory\] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
