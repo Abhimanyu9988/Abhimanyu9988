@@ -1,11 +1,32 @@
 {
   "records": [
     {
+      "additions": 34,
+      "approved_by": [
+        "jaronoff97",
+        "swiatekm"
+      ],
       "component": "general",
       "date": "2026-11-12",
+      "deletions": 1,
+      "discussion": 1,
+      "files": 3,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-operator/issues/5897"
+      ],
+      "merged": "2026-11-14",
+      "merged_by": "swiatekm",
       "number": 5924,
+      "recognition": [
+        {
+          "by": "jaronoff97",
+          "date": "2026-11-12",
+          "text": "looks great! thank you!",
+          "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5924#pullrequestreview-5883075861"
+        }
+      ],
       "repo": "open-telemetry/opentelemetry-operator",
-      "state": "open",
+      "state": "merged",
       "title": "Fix _link in target allocator /jobs/{job}/targets response",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5924"
