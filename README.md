@@ -392,7 +392,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**15** merged PRs · **3** open PRs · **11** PRs reviewed · **9** issues opened · **9** repositories
+**15** merged PRs · **3** open PRs · **11** PRs reviewed · **10** issues opened · **9** repositories
 
 #### Merged pull requests
 
@@ -440,6 +440,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) | opened |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
 | opentelemetry-operator | [Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896) | commented |
 | opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
@@ -449,9 +450,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
-| opentelemetry-collector-contrib | [\[receiver/kubelet_stats\] Add ephemeral and projected volume types to k8s.volume.type](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52198) | commented |
 
-[…and 30 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 31 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
