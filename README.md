@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**15 merged PRs** · 3 in review · 3 closed · **11 PRs reviewed** · 47 comments on others' issues and PRs · 9 issues opened
+**15 merged PRs** · 3 in review · 3 closed · **11 PRs reviewed** · 47 comments on others' issues and PRs · 10 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -58,11 +58,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-16 · Issue · open · [#53170 [receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) · opentelemetry-collector-contrib
 - 2026-11-12 · Comment · [#5897 Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897#issuecomment-6837808357) · opentelemetry-operator
 - 2026-11-12 · Comment · [#5896 Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339) · opentelemetry-operator
 - 2026-11-09 · Review · approved · [#52877 [receiver/kubeletstats] Added k8s.pod.filesystem.inode.used metric](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52877#pullrequestreview-5827418050) · opentelemetry-collector-contrib
 - 2026-11-06 · Issue · open · [#52823 [exporter/azuredataexplorer] Exponential histogram metrics are dropped during conversion](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52823) · opentelemetry-collector-contrib
-- 2026-11-05 · Comment · [#2161 [Operator] Cert invalid after cluster restart](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2161#issuecomment-6662239198) · opentelemetry-helm-charts
 
 ### Publications
 
@@ -85,6 +85,25 @@ _2 older items kept in [contributions.json](contributions.json)._
 #### open-telemetry/opentelemetry-collector-contrib
 
 <details>
+<summary><b>receiver/flinkmetrics</b> · 5 PRs · 2 PRs reviewed · 2 comments · 2 issues</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-11-16 | Issue · open | [#53170 [receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) |
+| 2026-11-06 | PR · open | [#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832) |
+| 2026-10-28 | PR · merged 2026-11-02 | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
+| 2026-10-27 | PR · merged 2026-11-06 | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
+| 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
+| 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
+| 2026-10-27 | Issue · open | [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) |
+| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
+| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
+| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
+| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
+
+</details>
+
+<details>
 <summary><b>exporter/azuredataexplorer</b> · 2 PRs · 3 PRs reviewed · 4 comments · 1 issue</summary>
 
 | Date | Type | Item |
@@ -99,24 +118,6 @@ _2 older items kept in [contributions.json](contributions.json)._
 | 2026-10-28 | Review · approved | [#51903 [exporter/azuredataexplorer] Propagate context to ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51903#pullrequestreview-5688668076) |
 | 2026-10-28 | Comment | [#52282 [exporter/azuredataexplorer] Unmaintained component](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52282#issuecomment-6478876178) |
 | 2026-10-28 | Comment | [#51872 [exporter/azuredataexplorer] Configured timeout is ignored by ingestion submission](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51872#issuecomment-6478813101) |
-
-</details>
-
-<details>
-<summary><b>receiver/flinkmetrics</b> · 5 PRs · 2 PRs reviewed · 2 comments · 1 issue</summary>
-
-| Date | Type | Item |
-|---|---|---|
-| 2026-11-06 | PR · open | [#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832) |
-| 2026-10-28 | PR · merged 2026-11-02 | [#52485 [chore] receiver/flinkmetrics: update tested Flink versions and correct README configuration](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52485) |
-| 2026-10-27 | PR · merged 2026-11-06 | [#52450 [receiver/flinkmetrics] Record JVM GC metrics for both JobManager and TaskManager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52450) |
-| 2026-10-27 | PR · merged 2026-10-27 | [#52406 [chore] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
-| 2026-10-27 | Review · approved | [#52366 [chore] Move @JonathanWamsley To Emeritus](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52366#pullrequestreview-5662787245) |
-| 2026-10-27 | Issue · open | [#52405 [receiver/flinkmetrics] Flink 1.20/2.x compatibility audit and metric correctness follow-ups](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52405) |
-| 2026-10-26 | Review · approved (2 rounds) | [#51638 [receiver/flinkmetrics] Add opt-in flink.job.id resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51638#pullrequestreview-5657121117) |
-| 2026-10-26 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6424876425) |
-| 2026-10-13 | PR · merged 2026-10-26 | [#52019 [chore][receiver/flinkmetrics] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
-| 2026-10-09 | Comment | [#51892 [receiver/flinkmetrics] is unmaintained](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/51892#issuecomment-6080239361) |
 
 </details>
 

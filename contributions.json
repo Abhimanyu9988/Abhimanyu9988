@@ -1,6 +1,16 @@
 {
   "records": [
     {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-11-16",
+      "number": 53170,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)",
+      "type": "issue",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170"
+    },
+    {
       "additions": 34,
       "approved_by": [
         "jaronoff97",
