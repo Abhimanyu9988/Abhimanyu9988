@@ -1,6 +1,50 @@
 {
   "records": [
     {
+      "component": "general",
+      "date": "2026-11-17",
+      "number": 5952,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "state": "open",
+      "title": "[chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952"
+    },
+    {
+      "component": "general",
+      "date": "2026-11-17",
+      "number": 5910,
+      "on": "issue",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5910",
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "operator-restart e2e test is flaky",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5910#issuecomment-6963259547"
+    },
+    {
+      "component": "general",
+      "date": "2026-11-17",
+      "number": 53281,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "state": "open",
+      "title": "[chore] Nominate Abhimanyu Bajaj as triager",
+      "type": "pr",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53281"
+    },
+    {
+      "component": "receiver/flinkmetrics",
+      "date": "2026-11-17",
+      "number": 53170,
+      "on": "issue",
+      "on_own_item": true,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170#issuecomment-6958783411"
+    },
+    {
       "component": "receiver/flinkmetrics",
       "date": "2026-11-16",
       "number": 53170,
@@ -1151,11 +1195,22 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50135#issuecomment-6108440062"
     },
     {
+      "additions": 40,
+      "approved_by": [
+        "TylerHelmuth"
+      ],
       "component": "processor/probabilisticsampler",
       "date": "2026-10-10",
+      "deletions": 0,
+      "discussion": 3,
+      "files": 2,
+      "fixes": [],
+      "merged": "2026-11-18",
+      "merged_by": "TylerHelmuth",
       "number": 51952,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "merged",
       "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952"
