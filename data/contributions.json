@@ -1,6 +1,13 @@
 {
   "merged": [
     {
+      "date": "2026-11-18",
+      "number": 51952,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952"
+    },
+    {
       "date": "2026-11-14",
       "number": 5924,
       "repo": "open-telemetry/opentelemetry-operator",
@@ -108,6 +115,20 @@
   ],
   "open": [
     {
+      "date": "2026-11-17",
+      "number": 5952,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "[chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952"
+    },
+    {
+      "date": "2026-11-17",
+      "number": 53281,
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[chore] Nominate Abhimanyu Bajaj as triager",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53281"
+    },
+    {
       "date": "2026-11-06",
       "number": 52832,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
@@ -120,13 +141,6 @@
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
-    },
-    {
-      "date": "2026-10-10",
-      "number": 51952,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952"
     }
   ],
   "orgs": [

@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "added": "2026-11-18",
+    "ref": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952",
+    "summary": "A small docs PR of mine got merged into the OpenTelemetry Collector contrib repo. It's a resubmission, because my first attempt was closed automatically as stale, so it was nice to see this one land.\n\nThe probabilistic sampler processor decides which telemetry to keep and which to drop. A few things can quietly go wrong if you don't know about them, so I added a Warnings section to its README. That way they are visible before you deploy, not after.\n\nWhat it covers:\n• Every collector in a tier needs the same hash_seed, or sampling decisions won't line up.\n• With fail_closed, data that can't be sampled properly is refused.\n• sampling_precision rounds thresholds.\n• sampling.priority can introduce count bias.\n• Orphaned telemetry is flagged as a warning too.\n\nOne call I made on purpose: I did not tag the processor as Stateful. Each sampling decision is made on its own, so the shared hash_seed requirement sits under Other instead.\n\nThis is part of a wider effort (issue #19172) to make each component's README say what to watch out for. The transform processor set the pattern I followed. No runtime code changed, only the README and metadata.\n\nThanks to Tyler Helmuth for the approval and m",
+    "title": "Merged PR in open-telemetry/opentelemetry-collector-contrib: [chore][processor/probabilisticsampler] Add Warnings section to README"
+  }
+]

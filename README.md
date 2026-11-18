@@ -405,12 +405,13 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**15** merged PRs · **3** open PRs · **11** PRs reviewed · **10** issues opened · **9** repositories
+**16** merged PRs · **4** open PRs · **11** PRs reviewed · **10** issues opened · **9** repositories
 
 #### Merged pull requests
 
 | Merged | Repository | Pull request |
 |---|---|---|
+| 2026-11-18 | opentelemetry-collector-contrib | [\[chore\]\[processor/probabilisticsampler\] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
 | 2026-11-14 | opentelemetry-operator | [Fix _link in target allocator /jobs/{job}/targets response](https://github.com/open-telemetry/opentelemetry-operator/pull/5924) |
 | 2026-11-12 | opentelemetry-operator | [\[chore\] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |
 | 2026-11-09 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Rename component type to azure_data_explorer](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822) |
@@ -420,17 +421,17 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | 2026-10-28 | opentelemetry-helm-charts | [docs(operator): explain autoGenerateCert behavior with Argo CD](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2473) |
 | 2026-10-27 | opentelemetry-collector-contrib | [\[chore\] receiver/flinkmetrics: match operator metrics on exact suffix](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52406) |
 | 2026-10-26 | opentelemetry-collector-contrib | [\[chore\]\[receiver/flinkmetrics\] Add Abhimanyu9988 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52019) |
-| 2026-10-20 | semantic-conventions | [\[k8s\] Add Pod and container memory limit and request utilization metrics](https://github.com/open-telemetry/semantic-conventions/pull/4219) |
 
-[…and 5 more](https://github.com/search?type=pullrequests&q=is%3Apr%20is%3Amerged%20author%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 6 more](https://github.com/search?type=pullrequests&q=is%3Apr%20is%3Amerged%20author%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 #### In review
 
 | Opened | Repository | Pull request |
 |---|---|---|
+| 2026-11-17 | opentelemetry-operator | [\[chore\] Remove the stand-in API server EndpointSlice before the operator-restart collector step](https://github.com/open-telemetry/opentelemetry-operator/pull/5952) |
+| 2026-11-17 | opentelemetry-collector-contrib | [\[chore\] Nominate Abhimanyu Bajaj as triager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53281) |
 | 2026-11-06 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832) |
 | 2026-10-22 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
-| 2026-10-10 | opentelemetry-collector-contrib | [\[chore\]\[processor/probabilisticsampler\] Add Warnings section to README](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952) |
 
 #### Code reviews
 
@@ -453,6 +454,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-operator | [operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910) | commented |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) | opened |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
 | opentelemetry-operator | [Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896) | commented |
@@ -462,9 +464,8 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | opentelemetry-collector-contrib | [\[internal/k8sinventory\] Unbounded List to fetch resourceVersion allocates GBs and can OOM the collector](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50600) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230) | commented |
 | semantic-conventions | [Add k8s owner spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
-| opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add optional per-pod ephemeral-storage inode metrics (InodesUsed / InodesFree / Inodes)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52240) | commented |
 
-[…and 31 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 32 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
