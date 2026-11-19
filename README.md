@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**16 merged PRs** · 4 in review · 3 closed · **11 PRs reviewed** · 48 comments on others' issues and PRs · 10 issues opened
+**17 merged PRs** · 3 in review · 3 closed · **11 PRs reviewed** · 48 comments on others' issues and PRs · 10 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -28,6 +28,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Merged
 
+- **[#5952 [chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step](https://github.com/open-telemetry/opentelemetry-operator/pull/5952)** · merged 2026-11-18 by swiatekm · +13 −0 in 1 file · fixes [#5910](https://github.com/open-telemetry/opentelemetry-operator/issues/5910)
 - **[#5924 Fix _link in target allocator /jobs/{job}/targets response](https://github.com/open-telemetry/opentelemetry-operator/pull/5924)** · merged 2026-11-14 by swiatekm · approved by jaronoff97 · +34 −1 in 3 files · fixes [#5897](https://github.com/open-telemetry/opentelemetry-operator/issues/5897)
 - **[#52822 [exporter/azuredataexplorer] Rename component type to azure_data_explorer](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52822)** · `exporter/azuredataexplorer` · merged 2026-11-09 by songy23 · approved by codeboten, crobert-1, singhvibhanshu and tanmaya-panda1 · +33 −23 in 11 files
 - **[#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850)** · merged 2026-11-12 by jaronoff97 · approved by iblancasa and swiatekm · +255 −2 in 9 files
@@ -47,7 +48,6 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### In review
 
-- **[#5952 [chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step](https://github.com/open-telemetry/opentelemetry-operator/pull/5952)** · opentelemetry-operator · opened 2026-11-17
 - **[#53281 [chore] Nominate Abhimanyu Bajaj as triager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53281)** · opentelemetry-collector-contrib · opened 2026-11-17
 - **[#52832 [receiver/flinkmetrics] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832)** · `receiver/flinkmetrics` · opentelemetry-collector-contrib · opened 2026-11-06
 - **[#52279 [receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279)** · `receiver/kubeletstats` · opentelemetry-collector-contrib · opened 2026-10-22
@@ -354,7 +354,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-11-17 | PR · open | [#5952 [chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step](https://github.com/open-telemetry/opentelemetry-operator/pull/5952) |
+| 2026-11-17 | PR · merged 2026-11-18 | [#5952 [chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step](https://github.com/open-telemetry/opentelemetry-operator/pull/5952) |
 | 2026-11-17 | Comment | [#5910 operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910#issuecomment-6963259547) |
 | 2026-11-12 | PR · merged 2026-11-14 | [#5924 Fix _link in target allocator /jobs/{job}/targets response](https://github.com/open-telemetry/opentelemetry-operator/pull/5924) |
 | 2026-10-30 | PR · merged 2026-11-12 | [#5850 [chore] Generate a list of collector components with specific operator support](https://github.com/open-telemetry/opentelemetry-operator/pull/5850) |

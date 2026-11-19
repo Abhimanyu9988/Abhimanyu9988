@@ -1,11 +1,24 @@
 {
   "records": [
     {
+      "additions": 13,
+      "approved_by": [
+        "swiatekm"
+      ],
       "component": "general",
       "date": "2026-11-17",
+      "deletions": 0,
+      "discussion": 1,
+      "files": 1,
+      "fixes": [
+        "https://github.com/open-telemetry/opentelemetry-operator/issues/5910"
+      ],
+      "merged": "2026-11-18",
+      "merged_by": "swiatekm",
       "number": 5952,
+      "recognition": [],
       "repo": "open-telemetry/opentelemetry-operator",
-      "state": "open",
+      "state": "merged",
       "title": "[chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952"
