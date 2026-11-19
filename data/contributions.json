@@ -2,6 +2,13 @@
   "merged": [
     {
       "date": "2026-11-18",
+      "number": 5952,
+      "repo": "open-telemetry/opentelemetry-operator",
+      "title": "[chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step",
+      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952"
+    },
+    {
+      "date": "2026-11-18",
       "number": 51952,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[chore][processor/probabilisticsampler] Add Warnings section to README",
@@ -114,13 +121,6 @@
     }
   ],
   "open": [
-    {
-      "date": "2026-11-17",
-      "number": 5952,
-      "repo": "open-telemetry/opentelemetry-operator",
-      "title": "[chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step",
-      "url": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952"
-    },
     {
       "date": "2026-11-17",
       "number": 53281,
