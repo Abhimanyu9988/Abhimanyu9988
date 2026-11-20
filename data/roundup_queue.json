@@ -1,14 +1,1 @@
-[
-  {
-    "added": "2026-11-18",
-    "ref": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51952",
-    "summary": "A small docs PR of mine got merged into the OpenTelemetry Collector contrib repo. It's a resubmission, because my first attempt was closed automatically as stale, so it was nice to see this one land.\n\nThe probabilistic sampler processor decides which telemetry to keep and which to drop. A few things can quietly go wrong if you don't know about them, so I added a Warnings section to its README. That way they are visible before you deploy, not after.\n\nWhat it covers:\n• Every collector in a tier needs the same hash_seed, or sampling decisions won't line up.\n• With fail_closed, data that can't be sampled properly is refused.\n• sampling_precision rounds thresholds.\n• sampling.priority can introduce count bias.\n• Orphaned telemetry is flagged as a warning too.\n\nOne call I made on purpose: I did not tag the processor as Stateful. Each sampling decision is made on its own, so the shared hash_seed requirement sits under Other instead.\n\nThis is part of a wider effort (issue #19172) to make each component's README say what to watch out for. The transform processor set the pattern I followed. No runtime code changed, only the README and metadata.\n\nThanks to Tyler Helmuth for the approval and m",
-    "title": "Merged PR in open-telemetry/opentelemetry-collector-contrib: [chore][processor/probabilisticsampler] Add Warnings section to README"
-  },
-  {
-    "added": "2026-11-19",
-    "ref": "https://github.com/open-telemetry/opentelemetry-operator/pull/5952",
-    "summary": "A flaky test in the OpenTelemetry Operator had a more satisfying cause than I expected, and my fix was merged this week.\n\nThe operator-restart e2e test sometimes failed because the target allocator pod never became ready. The test creates a fake API server endpoint to check that the operator's network policy follows endpoint changes. That endpoint stayed in place for the next step, so some of the target allocator's connections to the Kubernetes API went to an address that never answers. The pod then ended up in CrashLoopBackOff.\n\nWhat changed:\n• The fake endpoint is deleted right after the check that needs it.\n• The next step collects the target allocator's full pod logs, including the previous container's, so a future failure explains itself.\n\nHow I checked it on a local kind cluster:\n• 40 new connections to the Kubernetes API service: 40 worked at baseline, 19 with the fake endpoint in place, and 40 again after deleting it.\n• The e2e test passed three runs in a row.\n• I forced a failure on purpose to confirm the new logs show up.\n\nOne caveat: I couldn't see the target allocator logs from the original CI failures, so the link rests on matching symptoms. If the flake returns, the l",
-    "title": "Merged PR in open-telemetry/opentelemetry-operator: [chore] Remove the stand-in API server EndpointSlice before the operator-restart collector step"
-  }
-]
+[]
