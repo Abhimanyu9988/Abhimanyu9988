@@ -1,6 +1,18 @@
 {
   "records": [
     {
+      "author": "pragatibaheti",
+      "component": "exporter/azuredataexplorer",
+      "date": "2026-11-23",
+      "number": 53455,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53455",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "review_state": "changes_requested",
+      "title": "[exporter/azuredataexplorer] Add opt-in Ingest V2 queued ingestion",
+      "type": "review",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53455#pullrequestreview-6024890832"
+    },
+    {
       "additions": 13,
       "approved_by": [
         "swiatekm"
@@ -121,6 +133,18 @@
       "title": "Target allocator: `/debug/target` writes two pages when `target_hash` is not a number",
       "type": "comment",
       "url": "https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339"
+    },
+    {
+      "component": "general",
+      "date": "2026-11-11",
+      "number": 52907,
+      "on": "pr",
+      "on_own_item": false,
+      "parent_url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52907",
+      "repo": "open-telemetry/opentelemetry-collector-contrib",
+      "title": "[exporter/azuredataexplorer] Compress the payload the ingest options declare as gzip",
+      "type": "comment",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52907#issuecomment-6802156004"
     },
     {
       "author": "telescui",
@@ -733,7 +757,7 @@
       "date": "2026-10-22",
       "number": 52279,
       "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "state": "open",
+      "state": "closed",
       "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
       "type": "pr",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
@@ -987,7 +1011,7 @@
       "on_own_item": false,
       "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4074",
       "repo": "open-telemetry/semantic-conventions",
-      "title": "Add k8s owner spec",
+      "title": "Add k8s controller spec",
       "type": "comment",
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6187422920"
     },
@@ -1033,7 +1057,7 @@
       "on_own_item": false,
       "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4074",
       "repo": "open-telemetry/semantic-conventions",
-      "title": "Add k8s owner spec",
+      "title": "Add k8s controller spec",
       "type": "comment",
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6175559072"
     },
@@ -1155,7 +1179,7 @@
       "on_own_item": false,
       "parent_url": "https://github.com/open-telemetry/semantic-conventions/issues/4074",
       "repo": "open-telemetry/semantic-conventions",
-      "title": "Add k8s owner spec",
+      "title": "Add k8s controller spec",
       "type": "comment",
       "url": "https://github.com/open-telemetry/semantic-conventions/issues/4074#issuecomment-6126259339"
     },
