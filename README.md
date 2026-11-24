@@ -407,7 +407,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**17** merged PRs · **3** open PRs · **11** PRs reviewed · **10** issues opened · **9** repositories
+**17** merged PRs · **2** open PRs · **12** PRs reviewed · **10** issues opened · **9** repositories
 
 #### Merged pull requests
 
@@ -432,12 +432,12 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 |---|---|---|
 | 2026-11-17 | opentelemetry-collector-contrib | [\[chore\] Nominate Abhimanyu Bajaj as triager](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53281) |
 | 2026-11-06 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Support additional JVM garbage collectors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832) |
-| 2026-10-22 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Add opt-in PVC-level volume metrics (PoC)](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279) |
 
 #### Code reviews
 
 | Reviewed | Repository | Pull request |
 |---|---|---|
+| 2026-11-23 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add opt-in Ingest V2 queued ingestion](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53455) |
 | 2026-11-09 | opentelemetry-collector-contrib | [\[receiver/kubeletstats\] Added k8s.pod.filesystem.inode.used metric](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52877) |
 | 2026-11-03 | opentelemetry-collector-contrib | [\[chore\]\[exporter/azuredataexplorer\] Add tanmaya-panda1 as code owner](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52654) |
 | 2026-10-30 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Add optional support for metric exemplars](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50083) |
@@ -447,26 +447,25 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 | 2026-10-21 | opentelemetry-helm-charts | [feat(kube-stack): support additional instrumentation fields](https://github.com/open-telemetry/opentelemetry-helm-charts/pull/2470) |
 | 2026-10-10 | opentelemetry-collector-contrib | [\[chore\] \[exporter/elasticsearch\] Deflake TestExporterRetriesAfterElasticsearchRecovers by simulating the outage deterministically](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50781) |
 | 2026-10-08 | opentelemetry-collector-contrib | [\[chore\]\[receiver/k8scluster\] migrated semconv from v1.9.0 to v1.40.0 in metadata.go](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51874) |
-| 2026-09-21 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Fix direct-connection rate metrics emitting cumulative values](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51231) |
 
-[…and 1 more](https://github.com/search?type=pullrequests&q=is%3Apr%20reviewed-by%3AAbhimanyu9988%20-author%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 2 more](https://github.com/search?type=pullrequests&q=is%3Apr%20reviewed-by%3AAbhimanyu9988%20-author%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 #### Issues and discussions
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| semantic-conventions | [Add k8s controller spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
+| opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
+| semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111) | commented |
 | opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265) | commented |
-| opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230) | commented |
-| semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | opentelemetry-operator | [operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910) | commented |
 | opentelemetry-collector-contrib | [\[receiver/flinkmetrics\] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) | opened |
 | opentelemetry-operator | [Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896) | commented |
-| opentelemetry-collector | [\[scraperhelper\] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) | opened |
 
-[…and 32 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 33 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 

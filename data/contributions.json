@@ -134,13 +134,6 @@
       "repo": "open-telemetry/opentelemetry-collector-contrib",
       "title": "[receiver/flinkmetrics] Support additional JVM garbage collectors",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52832"
-    },
-    {
-      "date": "2026-10-22",
-      "number": 52279,
-      "repo": "open-telemetry/opentelemetry-collector-contrib",
-      "title": "[receiver/kubeletstats] Add opt-in PVC-level volume metrics (PoC)",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52279"
     }
   ],
   "orgs": [
