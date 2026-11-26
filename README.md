@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <!-- contrib-log:start -->
 ## Open-source contributions
 
-**17 merged PRs** · 2 in review · 4 closed · **12 PRs reviewed** · 49 comments on others' issues and PRs · 10 issues opened
+**17 merged PRs** · 2 in review · 4 closed · **12 PRs reviewed** · 49 comments on others' issues and PRs · 11 issues opened
 
 Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:operator`, `exporter/azuredataexplorer`, `exporter/elasticsearch`, `internal/k8sinventory`, `processor/probabilisticsampler`, `processor/transform`, `receiver/flinkmetrics`, `receiver/k8scluster`, `receiver/kubeletstats`, `receiver/sqlserver`
 
@@ -60,11 +60,11 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
+- 2026-11-25 · Issue · open · [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) · opentelemetry-java-instrumentation
 - 2026-11-23 · Review · changes requested · [#53455 [exporter/azuredataexplorer] Add opt-in Ingest V2 queued ingestion](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53455#pullrequestreview-6024890832) · opentelemetry-collector-contrib
 - 2026-11-17 · Comment · [#5910 operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910#issuecomment-6963259547) · opentelemetry-operator
 - 2026-11-16 · Issue · open · [#53170 [receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) · opentelemetry-collector-contrib
 - 2026-11-12 · Comment · [#5897 Target allocator: `_link` in `/jobs/{job}/targets` returns 404](https://github.com/open-telemetry/opentelemetry-operator/issues/5897#issuecomment-6837808357) · opentelemetry-operator
-- 2026-11-12 · Comment · [#5896 Target allocator: `/debug/target` writes two pages when `target_hash` is not a number](https://github.com/open-telemetry/opentelemetry-operator/issues/5896#issuecomment-6837855339) · opentelemetry-operator
 
 ### Publications
 
@@ -384,6 +384,17 @@ _2 older items kept in [contributions.json](contributions.json)._
 |---|---|---|
 | 2026-11-02 | Comment on PR | [#16284 fix(scraperhelper): count data points instead of metric objects in scraped_metric_points](https://github.com/open-telemetry/opentelemetry-collector/pull/16284#issuecomment-6576560336) |
 | 2026-10-24 | Issue · open | [#16228 [scraperhelper] scraped_metric_points counts metrics instead of data points](https://github.com/open-telemetry/opentelemetry-collector/issues/16228) |
+
+</details>
+
+#### open-telemetry/opentelemetry-java-instrumentation
+
+<details>
+<summary><b>general</b> · 1 issue</summary>
+
+| Date | Type | Item |
+|---|---|---|
+| 2026-11-25 | Issue · open | [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) |
 
 </details>
 
