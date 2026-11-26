@@ -418,7 +418,7 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 ### Upstream open-source contributions
 
-**17** merged PRs · **2** open PRs · **12** PRs reviewed · **10** issues opened · **9** repositories
+**17** merged PRs · **2** open PRs · **12** PRs reviewed · **11** issues opened · **9** repositories
 
 #### Merged pull requests
 
@@ -465,18 +465,18 @@ _Rebuilt daily from GitHub's public record by [oss-scout](https://github.com/Abh
 
 | Repository | Issue or PR | Role |
 |---|---|---|
+| opentelemetry-java-instrumentation | [Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) | opened |
+| opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Observability](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] return 503 Server is busy on transient pipeline errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/51408) | commented |
 | opentelemetry-collector-contrib | [\[exporter/azuredataexplorer\] Compress the payload the ingest options declare as gzip](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52907) | commented |
 | opentelemetry-collector-contrib | [\[receiver/k8scluster\] Add an optional k8s.cluster.uid resource attribute](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50180) | commented |
-| opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Observability](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52264) | commented |
 | semantic-conventions | [Add k8s controller spec](https://github.com/open-telemetry/semantic-conventions/issues/4074) | commented |
 | semantic-conventions | [\[k8s\] Promote k8s pod volume metrics to release candidate](https://github.com/open-telemetry/semantic-conventions/issues/4156) | commented |
 | opentelemetry-collector-contrib | [\[receiver/sqlserver\] Query-plan obfuscation produces invalid XML with duplicate xmlns attributes](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/50111) | commented |
 | opentelemetry-collector-contrib | [Promote `kubeletstats` Receiver to Stable - Community Support](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52265) | commented |
 | opentelemetry-collector-contrib | [\[receiver/splunkhec\] Return non-retryable status for permanent downstream errors](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/52230) | commented |
-| opentelemetry-operator | [operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910) | commented |
 
-[…and 33 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
+[…and 34 more](https://github.com/search?type=issues&q=commenter%3AAbhimanyu9988%20org%3Aopen-telemetry)
 
 <sub>Updated automatically every day from public GitHub activity.</sub>
 
