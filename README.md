@@ -60,7 +60,7 @@ Active since Feb 2024 across 9 repositories · components `area:k8s`, `chart:ope
 
 ### Recent activity
 
-- 2026-11-25 · Issue · open · [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) · opentelemetry-java-instrumentation
+- 2026-11-25 · Issue · closed · [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) · opentelemetry-java-instrumentation
 - 2026-11-23 · Review · changes requested · [#53455 [exporter/azuredataexplorer] Add opt-in Ingest V2 queued ingestion](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53455#pullrequestreview-6024890832) · opentelemetry-collector-contrib
 - 2026-11-17 · Comment · [#5910 operator-restart e2e test is flaky](https://github.com/open-telemetry/opentelemetry-operator/issues/5910#issuecomment-6963259547) · opentelemetry-operator
 - 2026-11-16 · Issue · open · [#53170 [receiver/flinkmetrics] Add optional restarting time total (restartingTimeTotal)](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53170) · opentelemetry-collector-contrib
@@ -394,7 +394,7 @@ _2 older items kept in [contributions.json](contributions.json)._
 
 | Date | Type | Item |
 |---|---|---|
-| 2026-11-25 | Issue · open | [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) |
+| 2026-11-25 | Issue · closed | [#21491 Backport #20572 to maintenance/v2.x: Java source launcher detected as JDK tool](https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21491) |
 
 </details>
 
